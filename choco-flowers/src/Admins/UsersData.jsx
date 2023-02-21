@@ -40,106 +40,48 @@ export default function UsersData() {
           boxShadow={"4xl"}
           borderRadius="15px"
         >
+          Md Faizan
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Lifetime Support"}
-            text={"faizan@gmail.com"}
+            title={"Email:-faizan@gmail.com"}
+            text={"Password:-faizan@3344"}
           />
         </Box>
 
         <Box
           bg={useColorModeValue("white", "gray.800")}
-          boxShadow={"2xl"}
+          boxShadow={"4xl"}
           borderRadius="15px"
         >
+          Md Faizan
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
+            title={"Email:-faizan@gmail.com"}
+            text={"Password:-faizan@3344"}
           />
         </Box>
         <Box
           bg={useColorModeValue("white", "gray.800")}
-          boxShadow={"2xl"}
+          boxShadow={"4xl"}
           borderRadius="15px"
         >
+          Md Faizan
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
+            title={"Email:-faizan@gmail.com"}
+            text={"Password:-faizan@3344"}
           />
         </Box>
         <Box
           bg={useColorModeValue("white", "gray.800")}
-          boxShadow={"2xl"}
+          boxShadow={"4xl"}
           borderRadius="15px"
         >
+          Md Faizan
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box
-          bg={useColorModeValue("white", "gray.800")}
-          boxShadow={"2xl"}
-          borderRadius="15px"
-        >
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
-          />
-        </Box>
-        <Box bg={useColorModeValue("white", "gray.800")} boxShadow={"2xl"}>
-          <Feature
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Md Faizan"}
-            text={"faizan@gmail.com"}
+            title={"Email:-faizan@gmail.com"}
+            text={"Password:-faizan@3344"}
           />
         </Box>
       </SimpleGrid>

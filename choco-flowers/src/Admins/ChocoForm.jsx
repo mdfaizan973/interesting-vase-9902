@@ -103,7 +103,7 @@ export default function ChocoForm() {
             borderRadius="100%"
             h="100vh"
             src={
-              "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlz.jpg?quality=75&auto=webp&optimize={medium}"
+              "https://cdn1.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163159x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}"
             }
           />
         </Flex>

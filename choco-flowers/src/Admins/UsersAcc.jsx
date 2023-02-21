@@ -3,6 +3,8 @@ import UsersData from "./UsersData";
 import { useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { SmallAddIcon, ArrowUpDownIcon } from "@chakra-ui/icons";
+import { Link as RouterLink } from "react-router-dom";
+
 import {
   IconButton,
   Avatar,
@@ -83,16 +85,18 @@ const SidebarContent = ({ onClose, ...rest }) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       <NavItem key="faizan" icon={FiHome}>
-        {" "}
-        Home
+        Dashboard
       </NavItem>
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Accounts
       </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Users
-        <ArrowUpDownIcon />
-      </NavItem>
+      <RouterLink to="/users_acc">
+        <NavItem key="faizan" icon={FiCompass}>
+          Users
+          <ArrowUpDownIcon />
+        </NavItem>
+      </RouterLink>
+
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Products
       </NavItem>
@@ -100,29 +104,40 @@ const SidebarContent = ({ onClose, ...rest }) => {
         Flowers
         <SmallAddIcon />
       </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Plants
-        <SmallAddIcon />
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Flower Bukeh
-        <SmallAddIcon />
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Sympathy Flowers
-        <SmallAddIcon />
-      </NavItem>
+      <RouterLink to="/addFlower">
+        <NavItem key="faizan" icon={FiCompass}>
+          Plants
+          <SmallAddIcon />
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/addFlower">
+        <NavItem key="faizan" icon={FiCompass}>
+          Flower Bukeh
+          <SmallAddIcon />
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/addFlower">
+        <NavItem key="faizan" icon={FiCompass}>
+          Sympathy Flowers
+          <SmallAddIcon />
+        </NavItem>
+      </RouterLink>
+
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Sweets
       </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Chocolates
-        <SmallAddIcon />
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        Cakes
-        <SmallAddIcon />
-      </NavItem>
+      <RouterLink to="/add_choco/cake">
+        <NavItem key="faizan" icon={FiCompass}>
+          Chocolates
+          <SmallAddIcon />
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/add_choco/cake">
+        <NavItem key="faizan" icon={FiCompass}>
+          Cakes
+          <SmallAddIcon />
+        </NavItem>
+      </RouterLink>
     </Box>
   );
 };
