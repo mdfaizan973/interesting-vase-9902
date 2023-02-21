@@ -13,6 +13,7 @@ import Flowers from "./../Pages/Flowers";
 import NotFound from "../Pages/NotFound";
 import Payments from "../Pages/Payments";
 import AddFlower from "../Admins/AddFlower";
+import UsersAcc from "../Admins/UsersAcc";
 export default function AllRoutes() {
   return (
     <Routes>
@@ -29,6 +30,7 @@ export default function AllRoutes() {
       <Route path="/payments" element={<Payments />}></Route>
       <Route path="*" element={<NotFound />}></Route>
       <Route path="/AddFlower" element={<AddFlower />}></Route>
+      <Route path="/users_acc" element={<UsersAcc />}></Route>
     </Routes>
   );
 }

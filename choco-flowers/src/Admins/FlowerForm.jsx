@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FlowerGetData from "./FlowerGetData";
 import {
   Button,
   Flex,
@@ -130,6 +131,7 @@ function FadeEx() {
           shadow="md"
         >
           {/* Here my all the data wiil be -> Components */}
+          <FlowerGetData />
         </Box>
       </Collapse>
     </>
