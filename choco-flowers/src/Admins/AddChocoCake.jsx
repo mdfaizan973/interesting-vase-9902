@@ -86,9 +86,11 @@ const SidebarContent = ({ onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <NavItem key="faizan" icon={FiHome}>
-        Dashboard
-      </NavItem>
+      <RouterLink to="/admin-dashboard">
+        <NavItem key="faizan" icon={FiHome}>
+          Dashboard
+        </NavItem>
+      </RouterLink>
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Accounts
       </NavItem>

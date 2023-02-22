@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
-import UsersData from "./UsersData";
+import FlowerForm from "./FlowerForm";
+import AdminData from "./AdminData";
 import { useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { SmallAddIcon, ArrowUpDownIcon } from "@chakra-ui/icons";
 import { Link as RouterLink } from "react-router-dom";
-
 import {
   IconButton,
   Avatar,
@@ -36,7 +36,7 @@ import {
   FiChevronDown,
 } from "react-icons/fi";
 
-export default function UsersAcc() {
+export default function AdminDashboard() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
@@ -57,10 +57,9 @@ export default function UsersAcc() {
           <SidebarContent onClose={onClose} />
         </DrawerContent>
       </Drawer>
-      {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="4">
-        <UsersData />
+        <AdminData />
       </Box>
     </Box>
   );
@@ -89,7 +88,6 @@ const SidebarContent = ({ onClose, ...rest }) => {
           Dashboard
         </NavItem>
       </RouterLink>
-
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Accounts
       </NavItem>

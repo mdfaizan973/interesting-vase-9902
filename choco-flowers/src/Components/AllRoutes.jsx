@@ -15,6 +15,7 @@ import Payments from "../Pages/Payments";
 import AddFlower from "../Admins/AddFlower";
 import UsersAcc from "../Admins/UsersAcc";
 import AddChocoCake from "./../Admins/AddChocoCake";
+import AdminDashboard from "../Admins/AdminDashboard";
 export default function AllRoutes() {
   return (
     <Routes>
@@ -32,7 +33,7 @@ export default function AllRoutes() {
       <Route path="*" element={<NotFound />}></Route>
       <Route path="/addFlower" element={<AddFlower />}></Route>
       <Route path="/add_choco/cake" element={<AddChocoCake />}></Route>
-
+      <Route path="/admin-dashboard" element={<AdminDashboard />}></Route>
       <Route path="/users_acc" element={<UsersAcc />}></Route>
     </Routes>
   );
