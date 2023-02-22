@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
-
+import Cakes from "../Cards/Cakes";
 export default function Carousel() {
   var settings = {
     dots: true,
@@ -67,6 +67,7 @@ export default function Carousel() {
         </Slider>
         <hr />
         <ExclusiveGifts />
+        <Cakes />
       </Box>
     </>
   );
