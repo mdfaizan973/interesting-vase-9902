@@ -1,7 +1,7 @@
 import React from "react";
 import { Heading, Text } from "@chakra-ui/react";
 import "./cards.css";
-// import Simpleban from "./Simpleban";
+import Simpleban from "./Simpleban";
 export default function ExclusiveGifts() {
   return (
     <>
@@ -52,7 +52,8 @@ export default function ExclusiveGifts() {
           </Heading>
         </div>
       </div>
-      {/*<Simpleban />*/}
+      <Simpleban />
+      {/**/}
     </>
   );
 }
