@@ -1,5 +1,11 @@
 import React from "react";
-
+import HoveNav from "../Components/HoveNav";
+import Navbar from "..//Components/Navbar";
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Navbar />
+      <HoveNav />
+    </div>
+  );
 }
