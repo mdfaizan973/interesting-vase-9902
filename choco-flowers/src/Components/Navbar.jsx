@@ -65,9 +65,9 @@ export default function Navbar() {
           <RouterLink to="/">
             <Box>
               <Image
-                src=".\Minari_Bao-removebg-preview.png"
-                alt="Dan Abramov"
-                width="60%"
+                src="https://user-images.githubusercontent.com/106812942/220562755-edf2f08b-cb43-433f-b8ba-758b3be4039b.png"
+                alt="Sweets Choco"
+                width="40%"
               />
             </Box>
           </RouterLink>
@@ -135,56 +135,10 @@ export default function Navbar() {
                   <MenuDivider />
                   <MenuItem>Your Servers</MenuItem>
                   <RouterLink to="/signup">
-                    {" "}
                     <MenuItem>New Account</MenuItem>
                   </RouterLink>
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
-                <Menu zIndex="1">
-                  <MenuButton as={Button} bg="gray.300" variant="outline">
-                    ≡
-                  </MenuButton>
-                  <MenuList zIndex="1">
-                    <MenuGroup zIndex="1" title="Menu">
-                      <MenuItem></MenuItem>
-                      <RouterLink to="/mens_pro">
-                        {" "}
-                        <MenuItem>Mens.... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/womens_pro">
-                        {" "}
-                        <MenuItem>Wmens.... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/kids_pro">
-                        {" "}
-                        <MenuItem>Kids.... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/brands">
-                        {" "}
-                        <MenuItem>Top_Brands.... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/cartpage">
-                        {" "}
-                        <MenuItem>Cart..... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/single_pro/:id">
-                        {" "}
-                        <MenuItem>single..... </MenuItem>{" "}
-                      </RouterLink>
-                      <RouterLink to="/blogs">
-                        {" "}
-                        <MenuItem>Blogs..... </MenuItem>{" "}
-                      </RouterLink>
-                    </MenuGroup>
-                    <MenuDivider />
-
-                    <RouterLink to="/signup">
-                      {" "}
-                      <MenuItem>Account</MenuItem>{" "}
-                    </RouterLink>
-                    <MenuItem>FAQ</MenuItem>
-                  </MenuList>
-                </Menu>{" "}
               </Menu>
             </Stack>
           </Flex>
