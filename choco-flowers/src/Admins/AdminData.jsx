@@ -13,6 +13,9 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { AspectRatio } from "@chakra-ui/react";
+
 import AddCarousels from "./AddCarousels";
 export default function AdminData() {
   return (
@@ -24,12 +27,7 @@ export default function AdminData() {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}
       >
-        <Stack
-          //   border={"2px solid black"}
-          mt={"-300px"}
-          flex={1}
-          spacing={{ base: 5, md: 10 }}
-        >
+        <Stack mt={"-25px"} flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -49,18 +47,26 @@ export default function AdminData() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
-            >
-              Go to website
-            </Button>
+            <RouterLink to="/">
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                colorScheme={"red"}
+                bg={"red.400"}
+                _hover={{ bg: "red.500" }}
+              >
+                Go to website
+              </Button>
+            </RouterLink>
           </Stack>
+          <AspectRatio maxW="600px" ratio={1}>
+            <Image
+              allowFullScreen
+              src="https://mobirise.com/assets52/images/poster.png"
+            />
+          </AspectRatio>
         </Stack>
         <Flex
           flex={1}
