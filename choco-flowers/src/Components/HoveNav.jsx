@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Center,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -73,7 +74,7 @@ export default function HoveNav() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+  const linkHoverColor = useColorModeValue("red", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
@@ -83,10 +84,10 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
-                p={2}
-                href={navItem.href ?? "#"}
+                p={4}
+                href={navItem.href}
                 fontSize={"sm"}
-                fontWeight={500}
+                fontWeight={650}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
@@ -227,6 +228,187 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "Flower Plant",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Chocolate",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Flowers",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Bokeh",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Gift",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Occasions",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Cakes",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Anniversary",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "International",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "BirthDay",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Married",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Roses",
+    children: [
+      {
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "/plants",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/plants",
+      },
+    ],
+  },
+
+  {
+    label: "Celebration",
     children: [
       {
         label: "Explore Design Work",
