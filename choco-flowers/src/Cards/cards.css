@@ -1,0 +1,61 @@
+.cards {
+  border: 2px solid rgb(129, 129, 129);
+}
+.title {
+  font-size: 20px;
+}
+.prople_card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  margin-top: 10px;
+}
+.prople_card div img {
+  border-radius: 10px;
+}
+.prople_card div {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.prople_card div:hover {
+  width: 99%;
+  opacity: 0.8;
+}
+
+.smpban {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+  gap: 15px;
+}
+.smpban div {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.smpban div:hover {
+  opacity: 0.8;
+  width: 99%;
+}
+.smpban div img {
+  border-radius: 10px;
+}
+
+.cartcat {
+  margin-top: 50px;
+}
+
+@media all and (min-width: 100px) and (max-width: 450px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .prople_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .smpban {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
