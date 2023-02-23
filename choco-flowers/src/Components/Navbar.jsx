@@ -65,7 +65,7 @@ export default function Navbar() {
           <RouterLink to="/">
             <Box>
               <Image
-                src="https://user-images.githubusercontent.com/106812942/220562755-edf2f08b-cb43-433f-b8ba-758b3be4039b.png"
+                src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
                 alt="Sweets Choco"
                 width="40%"
               />

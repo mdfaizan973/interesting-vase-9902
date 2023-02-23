@@ -10,7 +10,7 @@ import {
   Avatar,
   useColorModeValue,
 } from "@chakra-ui/react";
-
+import MultiPro from "./MultiPro";
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
 };
@@ -83,6 +83,7 @@ const TestimonialAvatar = ({ src, name, title }) => {
 export default function CustmerSay() {
   return (
     <>
+      <MultiPro />
       <div className="div2">
         <img
           style={{

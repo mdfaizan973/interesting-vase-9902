@@ -1,12 +1,12 @@
 import React from "react";
-import { Heading, Text } from "@chakra-ui/react";
+import { Heading, Text, Image } from "@chakra-ui/react";
 import "./cards.css";
 // import Simpleban from "./Simpleban";
 export default function Cakes() {
   return (
     <>
       <Heading as="h1" size="xl" mt={6} mb={2}>
-        Send Flowers & Exclusive Gifts
+        Shop Our Best Selling Chocolate Covered Cakes
       </Heading>
       <div className="prople_card">
         <div>
@@ -21,7 +21,7 @@ export default function Cakes() {
         <div>
           <img src="https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Addidas Ultra Lite 3
+            ChocoLate Cakes
           </Heading>
         </div>
         <div>
@@ -30,25 +30,25 @@ export default function Cakes() {
             alt=""
           />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Puma Xtream Pro
+            Butterscotch Cakes
           </Heading>
         </div>
         <div>
           <img src="https://www.fnp.com/images/pr/l/v20211130132724/dripping-2-tier-butterscotch-cake-1-5-kg_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            LeBron XX Stuffer'
+            Pineapple Cakes
           </Heading>
         </div>
         <div>
           <img src="https://www.fnp.com/images/pr/l/v20221130121853/butterscotch-cake-half-kg_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Sega Xtream Ultra
+            Flowers N Cakes
           </Heading>
         </div>
         <div>
           <img src="https://www.fnp.com/images/pr/l/v20221205145728/chocolate-caramel-fudge-cake-half-kg_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Air XX Stocking
+            Black Forest
           </Heading>
         </div>
       </div>
