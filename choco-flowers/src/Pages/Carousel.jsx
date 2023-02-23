@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
 import Cakes from "../Cards/Cakes";
+import Footer from "../Components/Footer";
 export default function Carousel() {
   var settings = {
     dots: true,

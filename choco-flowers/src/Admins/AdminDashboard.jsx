@@ -117,6 +117,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
           <SmallAddIcon />
         </NavItem>
       </RouterLink>
+
       <RouterLink to="/addFlower">
         <NavItem key="faizan" icon={FiCompass}>
           Sympathy Flowers

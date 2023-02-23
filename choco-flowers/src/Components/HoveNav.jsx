@@ -28,10 +28,10 @@ export default function HoveNav() {
 
   return (
     <Box
-      mt={"62px"}
       bg={useColorModeValue("gray.200", "gray.700")}
       textAlign={"center"}
-      m={"65px auto"}
+      m={"63px auto"}
+      w={"100%"}
     >
       <Flex
         // bg={useColorModeValue("gray.200", "gray.700")}
@@ -129,7 +129,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("red", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
@@ -187,10 +187,7 @@ const MobileNavItem = ({ label, children, href }) => {
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
+        <Text fontWeight={600} bg={useColorModeValue("gray.100", "gray.900")}>
           {label}
         </Text>
         {children && (
@@ -232,12 +229,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
@@ -247,12 +244,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/choco",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/choco",
       },
     ],
   },
@@ -391,21 +388,6 @@ const NAV_ITEMS = [
       },
     ],
   },
-  {
-    label: "Roses",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "/plants",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "/plants",
-      },
-    ],
-  },
 
   {
     label: "Celebration",
@@ -419,6 +401,21 @@ const NAV_ITEMS = [
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
         href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Blogs",
+    children: [
+      {
+        label: "About this website",
+        subLabel: "Design to inspire you",
+        href: "/blog",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/blog",
       },
     ],
   },

@@ -15,13 +15,13 @@ export default function ExclusiveGifts() {
             alt=""
           />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Ethereal Bliss
+            Sympathy
           </Heading>
         </div>
         <div>
           <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-ethereal-bliss-199418-m.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Addidas Ultra Lite 3
+            Get Well
           </Heading>
         </div>
         <div>
@@ -30,30 +30,29 @@ export default function ExclusiveGifts() {
             alt=""
           />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Puma Xtream Pro
+            Love & Romance
           </Heading>
         </div>
         <div>
           <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-pink-extravaganza-199417-m.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            LeBron XX Stuffer'
+            Just Because
           </Heading>
         </div>
         <div>
           <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-the-wild-garden-hamper-199419-m.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Sega Xtream Ultra
+            Fileds of Euro
           </Heading>
         </div>
         <div>
           <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-one-true-love-202537-m.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Air XX Stocking
+            Floral Embarac
           </Heading>
         </div>
       </div>
       <Simpleban />
-      {/**/}
     </>
   );
 }
