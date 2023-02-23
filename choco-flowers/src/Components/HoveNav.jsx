@@ -129,7 +129,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("red", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
@@ -187,10 +187,7 @@ const MobileNavItem = ({ label, children, href }) => {
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
+        <Text fontWeight={600} bg={useColorModeValue("gray.100", "gray.900")}>
           {label}
         </Text>
         {children && (
@@ -391,21 +388,6 @@ const NAV_ITEMS = [
       },
     ],
   },
-  {
-    label: "Roses",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "/plants",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "/plants",
-      },
-    ],
-  },
 
   {
     label: "Celebration",
@@ -419,6 +401,21 @@ const NAV_ITEMS = [
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
         href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Blogs",
+    children: [
+      {
+        label: "About this website",
+        subLabel: "Design to inspire you",
+        href: "/blog",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/blog",
       },
     ],
   },

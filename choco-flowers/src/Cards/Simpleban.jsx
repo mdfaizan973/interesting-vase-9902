@@ -1,6 +1,7 @@
 import React from "react";
 import "./cards.css";
 import { Link as RouterLink } from "react-router-dom";
+import { Heading } from "@chakra-ui/react";
 export default function Simpleban() {
   return (
     <>
@@ -16,13 +17,22 @@ export default function Simpleban() {
           </div>
         </RouterLink>
       </div>{" "}
-      <div className="div2">
+      <div
+        style={{
+          marginTop: "20px",
+        }}
+        className="div2"
+      >
+        <Heading>Offers</Heading>
+
+        <img src="https://www.fnp.com/assets/images/custom/new-desk-home/offer-banners/fnp_desktop_strip.jpg" />
         <img
           style={{
             marginTop: "20px",
           }}
-          src="https://www.fnp.com/assets/images/custom/new-desk-home/offer-banners/fnp_desktop_strip.jpg"
+          src="https://cdn.igp.com/f_auto,q_auto,t_pnopt34prodlp/banners/sale_banner_20220622.jpg"
         />
+        <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt34prodlp/banners/covid-strip-3.jpg?v=5" />
       </div>
     </>
   );

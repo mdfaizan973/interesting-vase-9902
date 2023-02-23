@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { Image } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { Input } from "@chakra-ui/react";
@@ -21,8 +21,12 @@ import {
   useColorMode,
   Center,
 } from "@chakra-ui/react";
+import { Modal, ModalOverlay, ModalContent } from "@chakra-ui/react";
+import { FaCartPlus, FaUser } from "react-icons/fa";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
+import Signup from "./../Pages/Signup";
+import LoginPop from "./../PopUp/LogInPop";
 
 const NavLink = ({ children }) => (
   <Link
@@ -51,6 +55,14 @@ export default function Navbar() {
   //   let anser = localStorage.getItem("totalcart") || 0;
   //   console.log("sdfasjfdsjfksjfksjfkjskdfa:- ", anser);
 
+  const OverlayOne = () => (
+    <ModalOverlay
+      bg="blackAlpha.300"
+      backdropFilter="blur(10px) hue-rotate(90deg)"
+    />
+  );
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [overlay, setOverlay] = React.useState(<OverlayOne />);
   return (
     <div>
       <Box
@@ -65,7 +77,7 @@ export default function Navbar() {
           <RouterLink to="/">
             <Box>
               <Image
-                src="https://user-images.githubusercontent.com/106812942/220562755-edf2f08b-cb43-433f-b8ba-758b3be4039b.png"
+                src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
                 alt="Sweets Choco"
                 width="40%"
               />
@@ -94,6 +106,7 @@ export default function Navbar() {
                       top="2px"
                       color="red"
                     >
+                      TotCrt-0
                       {/*} 
                       {anser} */}
                     </Text>
@@ -105,45 +118,45 @@ export default function Navbar() {
                     />
                   </Center>
                 </RouterLink>
-                <MenuButton
-                  as={Button}
-                  rounded={"full"}
-                  variant={"link"}
-                  cursor={"pointer"}
-                  minW={0}
+                <Button
+                  onClick={() => {
+                    setOverlay(<OverlayOne />);
+                    onOpen();
+                  }}
                 >
-                  <Avatar
-                    size={"sm"}
-                    src={"https://cdn-icons-png.flaticon.com/512/21/21104.png"}
-                  />
-                </MenuButton>
-                <MenuList alignItems={"center"}>
-                  <br />
-
-                  <Center>
-                    <Avatar
-                      size={"2xl"}
-                      src={
-                        "https://cdn-icons-png.flaticon.com/512/21/21104.png"
-                      }
-                    />
-                  </Center>
-
-                  <br />
-                  <Center>{/*  <p>Md Faizan</p> */}</Center>
-                  <br />
-                  <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <RouterLink to="/signup">
-                    <MenuItem>New Account</MenuItem>
-                  </RouterLink>
-                  <MenuItem>Logout</MenuItem>
-                </MenuList>
+                  <FaUser />
+                </Button>
               </Menu>
             </Stack>
           </Flex>
         </Flex>
       </Box>
+      <Modal isCentered isOpen={isOpen} onClose={onClose}>
+        {overlay}
+        <ModalContent>
+          <LoginPop />
+        </ModalContent>
+      </Modal>
     </div>
   );
 }
+// <MenuList alignItems={"center"}>
+//   <br />
+
+//   <Center>
+//     <Avatar
+//       size={"2xl"}
+//       src={"https://cdn-icons-png.flaticon.com/512/21/21104.png"}
+//     />
+//   </Center>
+
+//   <br />
+//   <Center>{/*  <p>Md Faizan</p> */}</Center>
+//   <br />
+//   <MenuDivider />
+//   <RouterLink to="/signup">
+//     <MenuItem>New Account</MenuItem>
+//   </RouterLink>
+//   <MenuItem>LogIn</MenuItem>
+//   <MenuItem>Logout</MenuItem>
+// </MenuList>;
