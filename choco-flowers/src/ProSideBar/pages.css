@@ -1,0 +1,9 @@
+/* .products-small-screen-card {
+  background-color: brown;
+} */
+
+@media all and (min-width: 100px) and (max-width: 450px) {
+  .products-small-screen-card {
+    margin-top: 1rem !important;
+  }
+}
