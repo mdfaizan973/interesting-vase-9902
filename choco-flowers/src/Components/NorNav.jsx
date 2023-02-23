@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 import { useColorMode } from "@chakra-ui/react";
@@ -59,18 +60,12 @@ export default function NorNav() {
         />
 
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"/"} w="100%"></SocialButton>
-          <Button>Home</Button>
-
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
-          </SocialButton>
+          <RouterLink to="/">
+            <Button>Home</Button>
+          </RouterLink>
           <Button onClick={toggleColorMode} width="20px">
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>
+          </Button>{" "}
         </Stack>
       </Container>
     </Box>

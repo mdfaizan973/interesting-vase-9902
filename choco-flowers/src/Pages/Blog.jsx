@@ -16,13 +16,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import NorNav from "../Components/NorNav";
+import Footer from "../Components/Footer";
 const Blog = () => {
   return (
     <>
       <NorNav />
 
       <Container marginTop={"20px"} maxW={"7xl"} p="12">
-        <Heading as="h1">WORKOUT SHOES, FOR ANY SPORT</Heading>
+        <Heading as="h1">BEAUTIFUL FLOWERS, FOR ANY FUNCTIONS</Heading>
         <Box
           marginTop={{ base: "1", sm: "5" }}
           display="flex"
@@ -47,7 +48,7 @@ const Blog = () => {
                   borderRadius="lg"
                   width="100%"
                   src={
-                    "https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Free-Sports-Running-Shoes-Banner-Design.jpg"
+                    "https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg"
                   }
                   alt="some good alt text"
                   objectFit="contain"
@@ -84,19 +85,17 @@ const Blog = () => {
               color={useColorModeValue("gray.700", "gray.200")}
               fontSize="lg"
             >
-              Athletic Shoes and Classic Shoes Driven by Bold Movement Whether
-              you’re moving your body or moving ideas forward, aim to move in
-              the direction of progress. Day after day, find time to lace up
-              your gym shoes and get in your workout, wherever, whenever and
-              whatever it might be. There’s no one way approach fitness as long
-              as you’re living an active life. If you’re passionate about
-              running, weightlifting, cross training or studio workouts, Reebok
-              has a range of athletic shoes designed to support you with
-              technology and comfort. And no matter how you move, do it with
-              purpose and style. Reebok’s retro sneakers were born from sports
-              out of the 80s and 90s. Then, they were gamechangers on the
-              basketball and tennis courts, track and trails. Now, they’re
-              timelessly authentic classic shoes. Iconic since day one.
+              Wish someone an extra special happy birthday with a dozen fresh
+              strawberries dipped in pure Belgian dark chocolate. These Happy
+              Birthday chocolate covered strawberries, each of which is
+              hand-dipped, actually spell out the special occasion in white
+              Belgian chocolate lettering. These extra-large berries arrive in
+              an elegant gift box. Wish someone an extra special happy birthday
+              with a dozen fresh strawberries dipped in pure Belgian dark
+              chocolate. These Happy Birthday chocolate covered strawberries,
+              each of which is hand-dipped, actually spell out the special
+              occasion in white Belgian chocolate lettering. These extra-large
+              berries arrive in an elegant gift box.
             </Text>
           </Box>
         </Box>
@@ -112,7 +111,7 @@ const Blog = () => {
                   <Image
                     transform="scale(1.0)"
                     src={
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPxlzNjSu2bYCBFrQgyzK-By0zVtMWix_NHD9sZ0eDPd93UD6pu1D03b4P0B8DUZbtg0&usqp=CAU"
+                      "https://www.fnp.com/images/pr/l/v20191125101018/2-layer-bamboo-plant-dairy-milk-silk-chocolates_1.jpg"
                     }
                     alt="some text"
                     objectFit="contain"
@@ -127,16 +126,16 @@ const Blog = () => {
 
               <Heading fontSize="xl" marginTop="2">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                  Some blog title
+                  DAIRY MILK
                 </Link>
               </Heading>
               <Text as="p" fontSize="md" marginTop="2">
-                FZ Shoes is about more than sportswear and workout clothes. We
-                partner with the best in the industry to co-create. This way we
-                offer our fans the sports apparel and style that match their
-                athletic needs, while keeping sustainability in mind. We’re here
-                to support creators. Improve their game. Create change. And we
-                think about the impact we have on our world.
+                The perfect gourmet gifts for chocolate lovers: our chocolate
+                covered strawberries. Birthdays. Anniversaries. Weddings.
+                Holidays. Or any occasion or event you want to celebrate. Buy
+                chocolate strawberries dipped in milk, white or dark chocolate,
+                then topped with our signature drizzles, chocolate chips,
+                sprinkles, and more.
               </Text>
             </Box>
           </WrapItem>
@@ -148,7 +147,7 @@ const Blog = () => {
                   <Image
                     transform="scale(1.0)"
                     src={
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Feyv9n1AswWvdPOriJGR18chswOvS0lB1A&usqp=CAU"
+                      "https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt8prodlp/banners/sdd_d_interflora_collections_20221107.jpg"
                     }
                     alt="some text"
                     objectFit="contain"
@@ -163,16 +162,15 @@ const Blog = () => {
 
               <Heading fontSize="xl" marginTop="2">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                  Some blog title
+                  SWEET FLOWAERS
                 </Link>
               </Heading>
               <Text as="p" fontSize="md" marginTop="2">
-                FZ Shoes is about more than sportswear and workout clothes. We
-                partner with the best in the industry to co-create. This way we
-                offer our fans the sports apparel and style that match their
-                athletic needs, while keeping sustainability in mind. We’re here
-                to support creators. Improve their game. Create change. And we
-                think about the impact we have on our world.
+                Covers blog posts on garden design, roses, tulips, spring
+                bloomers, edible gardening, Perennials, shrubs, early bloomers,
+                garden tools, botanic gardens, and more. White Flower Farm is
+                the premier American source for plants, shrubs, bulbs, and
+                gardening supplies delivered from our nursery to your home.
               </Text>
             </Box>
           </WrapItem>
@@ -183,7 +181,7 @@ const Blog = () => {
                   <Image
                     transform="scale(1.0)"
                     src={
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEP0um2lkjt83eD77kSgRnrYvtSGJKgCadAQ&usqp=CAU"
+                      "https://www.fnp.com/images/pr/l/v20210701022542/red-velvet-heart-cake-half-kg-eggless_5.jpg"
                     }
                     alt="some text"
                     objectFit="contain"
@@ -198,16 +196,15 @@ const Blog = () => {
 
               <Heading fontSize="xl" marginTop="2">
                 <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                  Some blog title
+                  HEART BEAT
                 </Link>
               </Heading>
               <Text as="p" fontSize="md" marginTop="2">
-                FZ Shoes is about more than sportswear and workout clothes. We
-                partner with the best in the industry to co-create. This way we
-                offer our fans the sports apparel and style that match their
-                athletic needs, while keeping sustainability in mind. We’re here
-                to support creators. Improve their game. Create change. And we
-                think about the impact we have on our world.
+                Gifting tips and advice to help you make the most of life's
+                special moments. Key topics covered are flower facts, floral
+                occasions & Holidays, seasonal trends, flower gifting ideas, and
+                more. A retail florist shop changed the way flowers are bought
+                for birthdays, anniversaries and special occasions.
               </Text>
             </Box>
           </WrapItem>
@@ -215,44 +212,33 @@ const Blog = () => {
         <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
           <Heading as="h2">What we write about</Heading>
           <Text as="p" fontSize="lg">
-            FZ Shoes designs for and with athletes of all kinds. Creators, who
-            love to change the game. Challenge conventions. Break the rules and
-            define new ones. Then break them again. We supply teams and
-            individuals with athletic clothing pre-match. To stay focussed. We
-            design sports apparel that get you to the finish line. To win the
-            match. We support women, with bras and tights made for purpose. From
-            low to high support. Maximum comfort. We design, innovate and
-            itterate. Testing new technologies in action. On the pitch, the
-            tracks, the court, the pool. Retro workout clothes inspire new
-            streetwear essentials. Like NMD, Ozweego and our Firebird
-            tracksuits. Classic sports models are brought back to life. Like
-            Stan Smith. And Superstar. Now seen on the streets and the stages.
+            SWEETS FLOWER designs for and with athletes of all function or
+            fastival. Slow Flowers podcast is about the artisanal,
+            anti-mass-market approach to celebrations, festivities and floral
+            gifts of love. Its mission is to promote American grown flowers, to
+            make it easy for flower consumers to connect with florists, shops,
+            studios and farms who provide American grown flowers, and to
+            encourage truthful and transparent country of origin labeling in the
+            floral industry.
           </Text>
           <Text as="p" fontSize="lg">
-            Sport keeps us fit. Keeps you mindful. Brings us together. Through
-            sport we have the power to change lives. Whether it is through
-            stories of inspiring athletes. Helping you to get up and get moving.
-            Sportswear featuring the latest technologies, to up your
-            performance. Beat your PB. adidas offers a home to the runner, the
-            basketball player, the soccer kid, the fitness enthusiast. The
-            weekend hiker that loves to escape the city. The yoga teacher that
-            spreads the moves. The 3-Stripes are seen in the music scene. On
-            stage, at festivals. Our sports clothing keeps you focused before
-            that whistle blows. During the race. And at the finish lines. We’re
-            here to support creators. Improve their game. Their lives. And
-            change the world.
+            Discover the contemporary scene of European floral designers in the
+            inspirational Fleur Créatif magazine. Fleur Créatif inspires boththe
+            amateur and the professional with wonderful creations and trendy,
+            ground-breaking designs. In addition to the digital platform, Fleur
+            Créatif also focuses on the print version.
           </Text>
           <Text as="p" fontSize="lg">
-            Through our collections we blur the borders between high fashion and
-            high performance. Like our adidas by Stella McCartney athletic
-            clothing collection – designed to look the part inside and outside
-            of the gym. Or some of our adidas Originals lifestyle pieces, that
-            can be worn as sportswear too. Our lives are constantly changing.
-            Becoming more and more versatile. And adidas designs with that in
-            mind.
+            Melting flowers is the finest flower designer in south India, based
+            in bangalore. If you are looking for the best flower decoration or
+            wedding decorations for your special day, look no further. Follow
+            their blog to read more about wedding decorations, party planner,
+            theme wedding decorations, flower decoration, mandap decorations,
+            showroom inauguration and more.
           </Text>
         </VStack>
       </Container>
+      <Footer />
     </>
   );
 };
