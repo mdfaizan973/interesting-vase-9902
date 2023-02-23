@@ -64,7 +64,7 @@ export default function Flowers({ children }) {
     setLoad(true);
     axios
       .get(
-        "https://quaint-panama-hat-bass.cyclic.app/api/flower_pot?_limit=8&_page=1"
+        `https://quaint-panama-hat-bass.cyclic.app/api/flower_pot?_limit=8&_page=${page}`
       )
       .then((res) => {
         console.log(res.data);
@@ -141,7 +141,8 @@ export default function Flowers({ children }) {
             gap={2}
             className={"products-small-screen-card"}
           >
-            {mdata.length > 0 && mdata.map((item) => <FlowerCard />)}
+            {mdata.length > 0 &&
+              mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
           </Grid>
           <div style={{}}>
             <div

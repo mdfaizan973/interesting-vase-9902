@@ -12,7 +12,14 @@ import {
 } from "@chakra-ui/react";
 import { FaCartPlus, FaStar } from "react-icons/fa";
 
-export default function FlowerCard() {
+export default function FlowerCard({
+  title,
+  image1,
+  name,
+  rating,
+  price,
+  discription,
+}) {
   return (
     <div>
       <Box
@@ -31,7 +38,7 @@ export default function FlowerCard() {
             w={"full"}
             objectFit="cover"
             alt="fsdfasfs"
-            src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlz.jpg?quality=75&auto=webp&optimize={medium}"
+            src={image1}
             borderRadius="20px"
           />
         </Center>
@@ -45,18 +52,18 @@ export default function FlowerCard() {
             fontSize={"sm"}
             letterSpacing={1.1}
           >
-            Same-Day Flower Delivery
+            {title.substring(0, 25)}
           </Text>
-          <Text className="cost">Flower Pot</Text>
-          <Text className="likes">
-            Loving Sentiments™ Blue & White Loving Sentiments™ Blue & White
-          </Text>
+          <Text className="cost">{name}</Text>
+          <Text className="likes">{discription.substring(0, 65)}....</Text>
           <HStack>
             <Text className="breed">
               <FaStar />
             </Text>
-            <Text className="breed">555 -</Text>
-            <Text className="description">$ 555</Text>
+            <Text color="red" className="breed">
+              {Math.floor(Math.random() * 5 + 1)}
+            </Text>
+            <Text className="description">- ₹ {price}</Text>
           </HStack>
 
           <Button colorScheme="facebook">
