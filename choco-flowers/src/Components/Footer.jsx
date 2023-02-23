@@ -14,10 +14,12 @@ import {
 } from "@chakra-ui/react";
 import { BiMailSend } from "react-icons/bi";
 import {
+  FaCartPlus,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
+  FaUser,
   FaYoutube,
 } from "react-icons/fa";
 const ListHeader = () => {
@@ -99,6 +101,7 @@ export default function Footer() {
           <FaFacebook />
           <FaYoutube />
           <FaInstagram />
+          <FaUser />
         </Stack>
       </Container>
     </Box>

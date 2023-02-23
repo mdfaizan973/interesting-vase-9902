@@ -10,7 +10,7 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaYoutube, FaUser } from "react-icons/fa";
 import { ReactNode } from "react";
 import { useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
@@ -66,6 +66,9 @@ export default function NorNav() {
           <Button onClick={toggleColorMode} width="20px">
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>{" "}
+          <Button>
+            <FaUser />
+          </Button>
         </Stack>
       </Container>
     </Box>

@@ -76,7 +76,7 @@ const Blog = () => {
           >
             <Heading marginTop="1">
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                STORIES, STYLES AND SPORTSHOES AT FZSHOES, SINCE 1949
+                The Garden Gate Flower Company Blog
               </Link>
             </Heading>
             <Text

@@ -21,6 +21,7 @@ import {
   useColorMode,
   Center,
 } from "@chakra-ui/react";
+import { FaCartPlus } from "react-icons/fa";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -94,6 +95,7 @@ export default function Navbar() {
                       top="2px"
                       color="red"
                     >
+                      TotCrt-0
                       {/*} 
                       {anser} */}
                     </Text>
