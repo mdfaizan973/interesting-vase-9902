@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { FaCartPlus, FaStar } from "react-icons/fa";
 
-export default function FlowerCard({
+export default function ChocoCard({
   title,
   image1,
   name,

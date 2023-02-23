@@ -52,7 +52,6 @@ export default function ExclusiveGifts() {
           </Heading>
         </div>
       </div>
-      <Simpleban />
     </>
   );
 }

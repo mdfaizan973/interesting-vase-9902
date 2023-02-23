@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
 import Cakes from "../Cards/Cakes";
 import Footer from "../Components/Footer";
+import Simpleban from "../Cards/Simpleban";
 export default function Carousel() {
   var settings = {
     dots: true,
@@ -68,6 +69,7 @@ export default function Carousel() {
         </Slider>
         <hr />
         <ExclusiveGifts />
+        <Simpleban />
         <Cakes />
       </Box>
     </>

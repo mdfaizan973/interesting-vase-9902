@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   Link,
   Drawer,
+  Image,
   DrawerContent,
   Text,
   useDisclosure,
@@ -60,7 +61,7 @@ export default function Flowers({ children }) {
   //     });
   // };
 
-  const getData = () => {
+  const getData = (page) => {
     setLoad(true);
     axios
       .get(
@@ -78,10 +79,10 @@ export default function Flowers({ children }) {
   };
 
   useEffect(() => {
-    getData();
-  }, []);
+    getData(page);
+  }, [page]);
 
-  console.log("my api data is ", mdata);
+  // console.log("my api data is ", mdata);
 
   const handleltoh = () => {
     //   let asc = mdata.sort((a, b) => a.price - b.price);
@@ -153,7 +154,7 @@ export default function Flowers({ children }) {
                 margin: "auto",
               }}
             >
-              <Stack direction="row" spacing={4} align="center">
+              <Stack mt="5" direction="row" spacing={4} align="center">
                 <Button
                   colorScheme="teal"
                   variant="solid"
@@ -173,9 +174,14 @@ export default function Flowers({ children }) {
                 </Button>
               </Stack>
             </div>
+            <Image
+              mt="5"
+              src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+            />
           </div>
         </Box>
       </Box>
+      <Footer />
     </div>
   );
 }
@@ -307,21 +313,3 @@ const MobileNav = ({ handleltoh, onOpen, ...rest }) => {
     </Flex>
   );
 };
-// {mdata?.length > 0 && line - 141 code
-//   mdata?.map((e) => {
-//     return (
-//       <GridItem id={e.id} w="100%" h="100%">
-//         <Mens_Card
-//           id={e.id}
-//           title={e.title}
-//           image1={e.image1}
-//           image2={e.image2}
-//           price={e.price}
-//           discription={e.discription}
-//           category={e.category}
-//           brand={e.brand}
-//         />
-//       </GridItem>
-//     );
-//   })}
-//l
