@@ -9,9 +9,17 @@ import {
   Text,
   useColorModeValue,
   Input,
+  Center,
   IconButton,
 } from "@chakra-ui/react";
 import { BiMailSend } from "react-icons/bi";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 const ListHeader = () => {
   return <Text fontWeight={"700"} fontSize={"lg"} mb={2}></Text>;
 };
@@ -31,7 +39,10 @@ export default function Footer() {
         >
           <Stack spacing={2}>
             <Box>
-              <img width="100%" src="http://localhost:3001/logo.png.png" />
+              <img
+                width="85%"
+                src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
+              />
             </Box>
             <Text fontSize={"sm"}>@Copyright 2023</Text>
           </Stack>
@@ -59,7 +70,6 @@ export default function Footer() {
             <Link href={"#"}>Instagram</Link>
             <Link href={"#"}>LinkedIn</Link>
           </Stack>
-
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
             <Stack direction={"row"}>
@@ -83,6 +93,13 @@ export default function Footer() {
             </Stack>
           </Stack>
         </SimpleGrid>
+        <Stack direction={"row"} spacing={6}>
+          <FaTwitter />
+          <FaLinkedin />
+          <FaFacebook />
+          <FaYoutube />
+          <FaInstagram />
+        </Stack>
       </Container>
     </Box>
   );
