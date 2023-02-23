@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   chakra,
@@ -5,15 +6,19 @@ import {
   Stack,
   Button,
   Image,
+  useDisclosure,
   Text,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
+import { Modal, ModalOverlay, ModalContent } from "@chakra-ui/react";
+
 import { Link as RouterLink } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaYoutube, FaUser } from "react-icons/fa";
 import { ReactNode } from "react";
 import { useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import LogInPop from "../PopUp/LogInPop";
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
@@ -40,6 +45,14 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function NorNav() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const OverlayOne = () => (
+    <ModalOverlay
+      bg="blackAlpha.300"
+      backdropFilter="blur(10px) hue-rotate(90deg)"
+    />
+  );
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [overlay, setOverlay] = React.useState(<OverlayOne />);
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -66,11 +79,22 @@ export default function NorNav() {
           <Button onClick={toggleColorMode} width="20px">
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>{" "}
-          <Button>
+          <Button
+            onClick={() => {
+              setOverlay(<OverlayOne />);
+              onOpen();
+            }}
+          >
             <FaUser />
           </Button>
         </Stack>
       </Container>
+      <Modal isCentered isOpen={isOpen} onClose={onClose}>
+        {overlay}
+        <ModalContent>
+          <LogInPop />
+        </ModalContent>
+      </Modal>
     </Box>
   );
 }

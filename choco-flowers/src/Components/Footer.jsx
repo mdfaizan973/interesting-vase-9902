@@ -101,7 +101,6 @@ export default function Footer() {
           <FaFacebook />
           <FaYoutube />
           <FaInstagram />
-          <FaUser />
         </Stack>
       </Container>
     </Box>
