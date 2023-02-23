@@ -2,24 +2,11 @@ import React, { useEffect, useReducer } from "react";
 import Navbar from "./../Components/Navbar";
 import HoveNav from "./../Components/HoveNav";
 import Footer from "../Components/Footer";
-import FlowerSide from "../ProSideBar/FlowerSide";
-import "./pages.css";
-// export default function Flowers() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <HoveNav />
-//       {/* Here my all the products will come Like Data*/}
-//       <FlowerSide />
-//     </div>
-//   );
-// }
-
-// import React, { useEffect, useReducer } from "react";
-// import axios from "axios";
+import FlowerCard from "../ProSideBar/FlowerCard";
+import Loding from "../ProSideBar/Loding";
+import axios from "axios";
 import {
   IconButton,
-  // Box,
   CloseButton,
   Flex,
   Icon,
@@ -28,38 +15,23 @@ import {
   Drawer,
   DrawerContent,
   Text,
-  Heading,
   useDisclosure,
   Stack,
   Button,
-  VStack,
-  Center,
-  Img,
-  HStack,
+  Box,
+  Grid,
 } from "@chakra-ui/react";
-import {
-  FiHome,
-  FiTrendingUp,
-  FiCompass,
-  FiSettings,
-  FiMenu,
-} from "react-icons/fi";
-import { FiToggleRight } from "react-icons/fi";
-import { BsFillAwardFill } from "react-icons/bs";
-// import Mens_Card from ".//Mens_Card";
+import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { SimpleGrid, Box, GridItem, Grid } from "@chakra-ui/react";
 import { useSearchParams } from "react-router-dom";
-import { BiBody } from "react-icons/bi";
-import { FaCartPlus, FaStar } from "react-icons/fa";
 
 export default function Flowers({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [mdata, setMdata] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const [page, setPage] = useState(1);
-
-  let searchResult = searchParams.get("query");
+  const [load, setLoad] = useState(false);
+  // let searchResult = searchParams.get("query");
   // console.log(searchResult);
   // useEffect(() => {
   //   getData(page);
@@ -87,9 +59,29 @@ export default function Flowers({ children }) {
   //       console.log(err);
   //     });
   // };
-  const handleChange = (val) => {
-    //   setPage(page + val);
+
+  const getData = () => {
+    setLoad(true);
+    axios
+      .get(
+        "https://quaint-panama-hat-bass.cyclic.app/api/flower_pot?_limit=8&_page=1"
+      )
+      .then((res) => {
+        console.log(res.data);
+        setMdata(res.data);
+        setLoad(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoad(false);
+      });
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log("my api data is ", mdata);
 
   const handleltoh = () => {
     //   let asc = mdata.sort((a, b) => a.price - b.price);
@@ -101,11 +93,16 @@ export default function Flowers({ children }) {
     //   setMdata([...desc]);
     //   // alert("hello");
   };
+  const handleChange = (val) => {
+    setPage(page + val);
+  };
+
   return (
-    <>
+    <div>
       <Box minH="100vh" bg={useColorModeValue("grey.100", "gray.900")}>
         <Navbar />
         <HoveNav />
+
         <SidebarContent
           handleltoh={handleltoh}
           handlehtol={handlehtol}
@@ -113,7 +110,6 @@ export default function Flowers({ children }) {
           onClose={() => onClose}
           display={{ base: "none", md: "block" }}
         />
-
         <Drawer
           autoFocus={false}
           isOpen={isOpen}
@@ -145,57 +141,7 @@ export default function Flowers({ children }) {
             gap={2}
             className={"products-small-screen-card"}
           >
-            <Box
-              borderRadius={"25px"}
-              boxShadow={"2xl"}
-              className="catsDetails"
-              w="full"
-              shadow="lg"
-              bg={useColorModeValue("white", "gray.800")}
-            >
-              <Center>
-                <Img
-                  boxSize="250px"
-                  maxW={"270px"}
-                  w={"full"}
-                  objectFit="cover"
-                  alt="fsdfasfs"
-                  src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlz.jpg?quality=75&auto=webp&optimize={medium}"
-                  borderRadius="15px"
-                />
-              </Center>
-
-              <VStack spacing={2} p={2}>
-                <Text
-                  className="name"
-                  fontSize={"20px"}
-                  fontWeight="bold"
-                  color={"green.500"}
-                  textTransform={"uppercase"}
-                  fontWeight={800}
-                  fontSize={"sm"}
-                  letterSpacing={1.1}
-                >
-                  Same-Day Flower Delivery
-                </Text>
-                <Text className="cost">Flower Pot</Text>
-                <Text className="likes">
-                  Loving Sentiments™ Blue & White Loving Sentiments™ Blue &
-                  White
-                </Text>
-                <HStack>
-                  <Text className="breed">
-                    <FaStar />
-                  </Text>
-                  <Text className="breed">555 -</Text>
-                  <Text className="description">$ 555</Text>
-                </HStack>
-
-                <Button colorScheme="facebook">
-                  Add To Cart -<FaCartPlus />
-                </Button>
-              </VStack>
-            </Box>
+            {mdata.length > 0 && mdata.map((item) => <FlowerCard />)}
           </Grid>
           <div style={{}}>
             <div
@@ -229,7 +175,7 @@ export default function Flowers({ children }) {
           </div>
         </Box>
       </Box>
-    </>
+    </div>
   );
 }
 
