@@ -3,6 +3,7 @@ import Navbar from "./../Components/Navbar";
 import HoveNav from "./../Components/HoveNav";
 import Footer from "../Components/Footer";
 import FlowerSide from "../ProSideBar/FlowerSide";
+import "./pages.css";
 // export default function Flowers() {
 //   return (
 //     <div>
@@ -31,14 +32,15 @@ import {
   useDisclosure,
   Stack,
   Button,
-  BoxProps,
-  FlexProps,
+  VStack,
+  Center,
+  Img,
+  HStack,
 } from "@chakra-ui/react";
 import {
   FiHome,
   FiTrendingUp,
   FiCompass,
-  FiStar,
   FiSettings,
   FiMenu,
 } from "react-icons/fi";
@@ -49,6 +51,7 @@ import { useState } from "react";
 import { SimpleGrid, Box, GridItem, Grid } from "@chakra-ui/react";
 import { useSearchParams } from "react-router-dom";
 import { BiBody } from "react-icons/bi";
+import { FaCartPlus, FaStar } from "react-icons/fa";
 
 export default function Flowers({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -134,13 +137,66 @@ export default function Flowers({ children }) {
         />
         <Box ml={{ base: 0, md: 60 }} p="4">
           {/*  {children}  */}
-          <Text margin={" 30px auto"}>Kidspro</Text>
+
           <Grid
             templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
             width={"100%"}
-            marginTop={"70px"}
+            marginTop={"-550px"}
             gap={2}
-          ></Grid>
+            className={"products-small-screen-card"}
+          >
+            <Box
+              borderRadius={"25px"}
+              boxShadow={"2xl"}
+              className="catsDetails"
+              w="full"
+              shadow="lg"
+              bg={useColorModeValue("white", "gray.800")}
+            >
+              <Center>
+                <Img
+                  boxSize="250px"
+                  maxW={"270px"}
+                  w={"full"}
+                  objectFit="cover"
+                  alt="fsdfasfs"
+                  src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlz.jpg?quality=75&auto=webp&optimize={medium}"
+                  borderRadius="15px"
+                />
+              </Center>
+
+              <VStack spacing={2} p={2}>
+                <Text
+                  className="name"
+                  fontSize={"20px"}
+                  fontWeight="bold"
+                  color={"green.500"}
+                  textTransform={"uppercase"}
+                  fontWeight={800}
+                  fontSize={"sm"}
+                  letterSpacing={1.1}
+                >
+                  Same-Day Flower Delivery
+                </Text>
+                <Text className="cost">Flower Pot</Text>
+                <Text className="likes">
+                  Loving Sentiments™ Blue & White Loving Sentiments™ Blue &
+                  White
+                </Text>
+                <HStack>
+                  <Text className="breed">
+                    <FaStar />
+                  </Text>
+                  <Text className="breed">555 -</Text>
+                  <Text className="description">$ 555</Text>
+                </HStack>
+
+                <Button colorScheme="facebook">
+                  Add To Cart -<FaCartPlus />
+                </Button>
+              </VStack>
+            </Box>
+          </Grid>
           <div style={{}}>
             <div
               style={{
@@ -298,7 +354,6 @@ const MobileNav = ({ handleltoh, onOpen, ...rest }) => {
         aria-label="open menu"
         icon={<FiMenu />}
       />
-
       <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
         Filter
       </Text>
