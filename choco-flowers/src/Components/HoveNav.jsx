@@ -388,21 +388,6 @@ const NAV_ITEMS = [
       },
     ],
   },
-  {
-    label: "Roses",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "/plants",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "/plants",
-      },
-    ],
-  },
 
   {
     label: "Celebration",
@@ -416,6 +401,21 @@ const NAV_ITEMS = [
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
         href: "/plants",
+      },
+    ],
+  },
+  {
+    label: "Blogs",
+    children: [
+      {
+        label: "About this website",
+        subLabel: "Design to inspire you",
+        href: "/blog",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "/blog",
       },
     ],
   },

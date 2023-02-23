@@ -170,6 +170,7 @@ export default function CustmerSay() {
           </Stack>
         </Container>
       </Box>
+      <Image src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt34prodlp/banners/media_coverage_d_interflora_illustration_20220904.png" />
     </>
   );
 }
