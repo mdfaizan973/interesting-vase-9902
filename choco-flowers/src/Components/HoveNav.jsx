@@ -28,10 +28,10 @@ export default function HoveNav() {
 
   return (
     <Box
-      mt={"62px"}
       bg={useColorModeValue("gray.200", "gray.700")}
       textAlign={"center"}
-      m={"65px auto"}
+      m={"63px auto"}
+      w={"100%"}
     >
       <Flex
         // bg={useColorModeValue("gray.200", "gray.700")}
@@ -229,12 +229,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
@@ -244,12 +244,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/choco",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/choco",
       },
     ],
   },

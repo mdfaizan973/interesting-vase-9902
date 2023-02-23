@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Flex,
   Box,
@@ -8,12 +9,15 @@ import {
   Stack,
   Link,
   Button,
+  HStack,
   Heading,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 export default function LogInPop() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
       <Flex
@@ -54,10 +58,15 @@ export default function LogInPop() {
                   <Checkbox>Remember me</Checkbox>
                   <Link color={"blue.400"}>Forgot password?</Link>
                 </Stack>
-                <RouterLink to="/signup">
-                  {" "}
-                  <Button color={"blue.400"}>New Account</Button>{" "}
-                </RouterLink>
+                <HStack onClose={onClose}>
+                  <RouterLink to="/signup">
+                    {" "}
+                    <Button color={"blue.400"}>New Account</Button>{" "}
+                  </RouterLink>
+                  <RouterLink to="/">
+                    <Button color={"red.400"}>Home</Button>
+                  </RouterLink>
+                </HStack>
 
                 <Button
                   bg={"blue.400"}
