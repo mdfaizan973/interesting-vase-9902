@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   Link,
   Drawer,
+  Image,
   DrawerContent,
   Text,
   useDisclosure,
@@ -153,7 +154,7 @@ export default function Flowers({ children }) {
                 margin: "auto",
               }}
             >
-              <Stack direction="row" spacing={4} align="center">
+              <Stack mt="5" direction="row" spacing={4} align="center">
                 <Button
                   colorScheme="teal"
                   variant="solid"
@@ -173,9 +174,14 @@ export default function Flowers({ children }) {
                 </Button>
               </Stack>
             </div>
+            <Image
+              mt="5"
+              src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+            />
           </div>
         </Box>
       </Box>
+      <Footer />
     </div>
   );
 }
