@@ -61,10 +61,11 @@ export default function AdminData() {
               </Button>
             </RouterLink>
           </Stack>
-          <AspectRatio maxW="600px" ratio={1}>
+          <AspectRatio ratio={1}>
             <Image
+              w="10"
               allowFullScreen
-              src="https://mobirise.com/assets52/images/poster.png"
+              src="https://user-images.githubusercontent.com/106812942/221214462-36c35e3a-f00e-4c5f-a874-aadc6a6503d2.png"
             />
           </AspectRatio>
         </Stack>
