@@ -105,82 +105,89 @@ export default function Flowers({ children }) {
         <Navbar />
         <HoveNav />
 
-        <SidebarContent
-          handleltoh={handleltoh}
-          handlehtol={handlehtol}
-          // onClick={handlehtol}
-          onClose={() => onClose}
-          display={{ base: "none", md: "block" }}
-        />
-        <Drawer
-          autoFocus={false}
-          isOpen={isOpen}
-          onClick={handleltoh}
-          placement="left"
-          onClose={onClose}
-          returnFocusOnClose={false}
-          onOverlayClick={onClose}
-          size="full"
-        >
-          <DrawerContent>
-            <SidebarContent onClose={onClose} />
-          </DrawerContent>
-        </Drawer>
-        {/* mobilenav */}
-        <MobileNav
-          display={{ base: "flex", md: "none" }}
-          onOpen={onOpen}
-          onClick={handleltoh}
-          handlehtol={handlehtol}
-        />
-        <Box ml={{ base: 0, md: 60 }} p="4">
-          {/*  {children}  */}
-
-          <Grid
-            templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
-            width={"100%"}
-            marginTop={"-550px"}
-            gap={2}
-            className={"products-small-screen-card"}
-          >
-            {mdata.length > 0 &&
-              mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
-          </Grid>
-          <div style={{}}>
-            <div
-              style={{
-                width: "30%",
-                display: "flex",
-                justifyContent: "center",
-                margin: "auto",
-              }}
-            >
-              <Stack mt="5" direction="row" spacing={4} align="center">
-                <Button
-                  colorScheme="teal"
-                  variant="solid"
-                  isDisabled={page == 1}
-                  onClick={() => handleChange(-1)}
-                >
-                  ⬅️Prev
-                </Button>
-
-                <h3>{page}</h3>
-                <Button
-                  colorScheme="teal"
-                  variant="solid"
-                  onClick={() => handleChange(1)}
-                >
-                  Next➡️
-                </Button>
-              </Stack>
-            </div>
-            <Image
-              mt="5"
-              src="https://images.contentstack.io/v3/assets/blt22a4279bb3e9cfce/blta459f510909312c8/63caaf13c1c5071069860f10/FY21_SB_Marketing_BIrthday_10_26_20_smaller.jpg?quality=75&auto=webp&optimize={medium}"
+        {load ? (
+          <Loding />
+        ) : (
+          <div>
+            <SidebarContent
+              handleltoh={handleltoh}
+              handlehtol={handlehtol}
+              // onClick={handlehtol}
+              onClose={() => onClose}
+              display={{ base: "none", md: "block" }}
             />
+            <Drawer
+              autoFocus={false}
+              isOpen={isOpen}
+              onClick={handleltoh}
+              placement="left"
+              onClose={onClose}
+              returnFocusOnClose={false}
+              onOverlayClick={onClose}
+              size="full"
+            >
+              <DrawerContent>
+                <SidebarContent onClose={onClose} />
+              </DrawerContent>
+            </Drawer>
+            {/* mobilenav */}
+            <MobileNav
+              display={{ base: "flex", md: "none" }}
+              onOpen={onOpen}
+              onClick={handleltoh}
+              handlehtol={handlehtol}
+            />
+
+            <Box ml={{ base: 0, md: 60 }} p="4">
+              {/*  {children}  */}
+
+              <Grid
+                templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
+                width={"100%"}
+                marginTop={"-550px"}
+                gap={2}
+                className={"products-small-screen-card"}
+              >
+                {mdata.length > 0 &&
+                  mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
+              </Grid>
+              <div style={{}}>
+                <div
+                  style={{
+                    width: "30%",
+                    display: "flex",
+                    justifyContent: "center",
+                    margin: "auto",
+                  }}
+                >
+                  <Stack mt="5" direction="row" spacing={4} align="center">
+                    <Button
+                      colorScheme="teal"
+                      variant="solid"
+                      isDisabled={page == 1}
+                      onClick={() => handleChange(-1)}
+                    >
+                      ⬅️Prev
+                    </Button>
+
+                    <h3>{page}</h3>
+                    <Button
+                      colorScheme="teal"
+                      variant="solid"
+                      onClick={() => handleChange(1)}
+                    >
+                      Next➡️
+                    </Button>
+                  </Stack>
+                </div>
+                <Image
+                  mt="5"
+                  src="https://images.contentstack.io/v3/assets/blt22a4279bb3e9cfce/blta459f510909312c8/63caaf13c1c5071069860f10/FY21_SB_Marketing_BIrthday_10_26_20_smaller.jpg?quality=75&auto=webp&optimize={medium}"
+                />
+              </div>
+            </Box>
           </div>
-        </Box>
+        )}
       </Box>
       <Footer />
     </div>

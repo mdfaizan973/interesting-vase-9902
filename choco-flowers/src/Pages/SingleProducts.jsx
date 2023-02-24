@@ -29,20 +29,26 @@ import {
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
+import Loding from "./../ProSideBar/Loding";
+
 export default function SingleProducts() {
   const [prods, setProds] = useState([]);
+  const [load, setLoad] = useState(false);
   const [cartdata, setCartdata] = useState([]);
   const { id } = useParams();
   console.log(id);
   const getDta = async () => {
+    setLoad(true);
     axios
       .get(`https://talented-ox-parka.cyclic.app/api/all-pro/${id}`)
       .then((res) => {
         console.log(res.data);
         setProds(res.data);
+        setLoad(false);
       })
       .catch((err) => {
         console.log(err);
+        setLoad(false);
       });
   };
   useEffect(() => {

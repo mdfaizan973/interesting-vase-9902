@@ -104,82 +104,88 @@ export default function Cakes({ children }) {
         <Navbar />
         <HoveNav />
 
-        <SidebarContent
-          handleltoh={handleltoh}
-          handlehtol={handlehtol}
-          // onClick={handlehtol}
-          onClose={() => onClose}
-          display={{ base: "none", md: "block" }}
-        />
-        <Drawer
-          autoFocus={false}
-          isOpen={isOpen}
-          onClick={handleltoh}
-          placement="left"
-          onClose={onClose}
-          returnFocusOnClose={false}
-          onOverlayClick={onClose}
-          size="full"
-        >
-          <DrawerContent>
-            <SidebarContent onClose={onClose} />
-          </DrawerContent>
-        </Drawer>
-        {/* mobilenav */}
-        <MobileNav
-          display={{ base: "flex", md: "none" }}
-          onOpen={onOpen}
-          onClick={handleltoh}
-          handlehtol={handlehtol}
-        />
-        <Box ml={{ base: 0, md: 60 }} p="4">
-          {/*  {children}  */}
-
-          <Grid
-            templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
-            width={"100%"}
-            marginTop={"-550px"}
-            gap={2}
-            className={"products-small-screen-card"}
-          >
-            {mdata.length > 0 &&
-              mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
-          </Grid>
-          <div style={{}}>
-            <div
-              style={{
-                width: "30%",
-                display: "flex",
-                justifyContent: "center",
-                margin: "auto",
-              }}
-            >
-              <Stack mt="5" direction="row" spacing={4} align="center">
-                <Button
-                  colorScheme="teal"
-                  variant="solid"
-                  isDisabled={page == 1}
-                  onClick={() => handleChange(-1)}
-                >
-                  ⬅️Prev
-                </Button>
-
-                <h3>{page}</h3>
-                <Button
-                  colorScheme="teal"
-                  variant="solid"
-                  onClick={() => handleChange(1)}
-                >
-                  Next➡️
-                </Button>
-              </Stack>
-            </div>
-            <Image
-              mt="5"
-              src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+        {load ? (
+          <Loding />
+        ) : (
+          <div>
+            <SidebarContent
+              handleltoh={handleltoh}
+              handlehtol={handlehtol}
+              onClose={() => onClose}
+              display={{ base: "none", md: "block" }}
             />
+            <Drawer
+              autoFocus={false}
+              isOpen={isOpen}
+              onClick={handleltoh}
+              placement="left"
+              onClose={onClose}
+              returnFocusOnClose={false}
+              onOverlayClick={onClose}
+              size="full"
+            >
+              <DrawerContent>
+                <SidebarContent onClose={onClose} />
+              </DrawerContent>
+            </Drawer>
+            {/* mobilenav */}
+            <MobileNav
+              display={{ base: "flex", md: "none" }}
+              onOpen={onOpen}
+              onClick={handleltoh}
+              handlehtol={handlehtol}
+            />
+
+            <Box ml={{ base: 0, md: 60 }} p="4">
+              {/*  {children}  */}
+
+              <Grid
+                templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
+                width={"100%"}
+                marginTop={"-550px"}
+                gap={2}
+                className={"products-small-screen-card"}
+              >
+                {mdata.length > 0 &&
+                  mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
+              </Grid>
+              <div style={{}}>
+                <div
+                  style={{
+                    width: "30%",
+                    display: "flex",
+                    justifyContent: "center",
+                    margin: "auto",
+                  }}
+                >
+                  <Stack mt="5" direction="row" spacing={4} align="center">
+                    <Button
+                      colorScheme="teal"
+                      variant="solid"
+                      isDisabled={page == 1}
+                      onClick={() => handleChange(-1)}
+                    >
+                      ⬅️Prev
+                    </Button>
+
+                    <h3>{page}</h3>
+                    <Button
+                      colorScheme="teal"
+                      variant="solid"
+                      onClick={() => handleChange(1)}
+                    >
+                      Next➡️
+                    </Button>
+                  </Stack>
+                </div>
+                <Image
+                  mt="5"
+                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+                />
+              </div>
+            </Box>
           </div>
-        </Box>
+        )}
       </Box>
       <Footer />
     </div>
