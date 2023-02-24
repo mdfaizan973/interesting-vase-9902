@@ -1,10 +1,17 @@
 import React from "react";
-import { Skeleton, Stack, SkeletonCircle } from "@chakra-ui/react";
+import { Skeleton, Spinner, Stack, SkeletonCircle } from "@chakra-ui/react";
 export default function Loding() {
   return (
     <div>
       <Stack>
-        <SkeletonCircle size="10" />
+        <Spinner
+          thickness="4px"
+          speed="1s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="2xl"
+        />
+
         <Skeleton height="100px" />
         <Skeleton height="100px" />
         <Skeleton height="100px" />

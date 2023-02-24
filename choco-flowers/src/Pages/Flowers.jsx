@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useContext } from "react";
 import Navbar from "./../Components/Navbar";
 import HoveNav from "./../Components/HoveNav";
 import Footer from "../Components/Footer";
@@ -60,13 +60,11 @@ export default function Flowers({ children }) {
   //       console.log(err);
   //     });
   // };
-
+  // https://quaint-panama-hat-bass.cyclic.app/api/flower_pot
   const getData = (page) => {
     setLoad(true);
     axios
-      .get(
-        `https://quaint-panama-hat-bass.cyclic.app/api/flower_pot?_limit=8&_page=${page}`
-      )
+      .get(`http://localhost:8018/flowers?_limit=8&_page=${page}`)
       .then((res) => {
         console.log(res.data);
         setMdata(res.data);
