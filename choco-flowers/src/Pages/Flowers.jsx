@@ -64,7 +64,9 @@ export default function Flowers({ children }) {
   const getData = (page) => {
     setLoad(true);
     axios
-      .get(`http://localhost:8018/flowers?_limit=8&_page=${page}`)
+      .get(
+        `https://quaint-panama-hat-bass.cyclic.app/api/flower_pot?_limit=8&_page=${page}`
+      )
       .then((res) => {
         console.log(res.data);
         setMdata(res.data);
