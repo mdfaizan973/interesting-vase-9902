@@ -9,7 +9,7 @@ export default function Loding() {
           speed="1s"
           emptyColor="gray.200"
           color="blue.500"
-          size="2xl"
+          size="xl"
         />
 
         <Skeleton height="100px" />
