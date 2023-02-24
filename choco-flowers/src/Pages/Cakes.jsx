@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import Navbar from "./../Components/Navbar";
 import HoveNav from "./../Components/HoveNav";
 import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
+import axios from "axios";
 import {
   IconButton,
   CloseButton,
@@ -22,16 +23,67 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
+import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { CakeContext } from "../Context/CakesCont";
-import { Link as RouterLink } from "react-router-dom";
-export default function Cakes() {
+
+export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [mdata, setMdata] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
-  // const [load, setLoad] = useState(false);
-  const { mdata, handleChange, page, load } = useContext(CakeContext);
-  console.log(load);
-  // Data is coming from  DataFContextProvider {Context Api}
+  const [page, setPage] = useState(1);
+  const [load, setLoad] = useState(false);
+  // let searchResult = searchParams.get("query");
+  // console.log(searchResult);
+  // useEffect(() => {
+  //   getData(page);
+  // }, [searchParams, page]);
+  // const getData = (page) => {
+  //   axios
+  //     .get(`http://localhost:3040/Child_shoe?_limit=8&_page=${page}`)
+  //     .then((res) => {
+  //       // setMdata(res.data);
+  //       let data = res.data;
+  //       if (searchResult) {
+  //         data = data.filter((el) => {
+  //           searchResult = searchResult.toLowerCase();
+
+  //           return (
+  //             el.brand.toLowerCase().includes(searchResult) ||
+  //             el.category.toLowerCase().includes(searchResult) ||
+  //             el.title.toLowerCase().includes(searchResult)
+  //           );
+  //         });
+  //       }
+  //       setMdata(data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
+  // https://quaint-panama-hat-bass.cyclic.app/api/flower_pot
+  const getData = (page) => {
+    setLoad(true);
+    axios
+      .get(
+        `https://talented-ox-parka.cyclic.app/api/cakes?_limit=8&_page=${page}`
+      )
+      .then((res) => {
+        console.log(res.data);
+        setMdata(res.data);
+        setLoad(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoad(false);
+      });
+  };
+
+  useEffect(() => {
+    getData(page);
+  }, [page]);
+
+  // console.log("my api data is ", mdata);
+
   const handleltoh = () => {
     //   let asc = mdata.sort((a, b) => a.price - b.price);
     //   setMdata([...asc]);
@@ -42,99 +94,92 @@ export default function Cakes() {
     //   setMdata([...desc]);
     //   // alert("hello");
   };
+  const handleChange = (val) => {
+    setPage(page + val);
+  };
 
-  // if (load) {
-  //   return <Loding />;
-  // }
   return (
     <div>
       <Box minH="100vh" bg={useColorModeValue("grey.100", "gray.900")}>
-        {load ? (
-          <Loding />
-        ) : (
-          <div>
-            <Navbar />
-            <HoveNav />
+        <Navbar />
+        <HoveNav />
 
-            <SidebarContent
-              handleltoh={handleltoh}
-              handlehtol={handlehtol}
-              // onClick={handlehtol}
-              onClose={() => onClose}
-              display={{ base: "none", md: "block" }}
-            />
-            <Drawer
-              autoFocus={false}
-              isOpen={isOpen}
-              onClick={handleltoh}
-              placement="left"
-              onClose={onClose}
-              returnFocusOnClose={false}
-              onOverlayClick={onClose}
-              size="full"
+        <SidebarContent
+          handleltoh={handleltoh}
+          handlehtol={handlehtol}
+          // onClick={handlehtol}
+          onClose={() => onClose}
+          display={{ base: "none", md: "block" }}
+        />
+        <Drawer
+          autoFocus={false}
+          isOpen={isOpen}
+          onClick={handleltoh}
+          placement="left"
+          onClose={onClose}
+          returnFocusOnClose={false}
+          onOverlayClick={onClose}
+          size="full"
+        >
+          <DrawerContent>
+            <SidebarContent onClose={onClose} />
+          </DrawerContent>
+        </Drawer>
+        {/* mobilenav */}
+        <MobileNav
+          display={{ base: "flex", md: "none" }}
+          onOpen={onOpen}
+          onClick={handleltoh}
+          handlehtol={handlehtol}
+        />
+        <Box ml={{ base: 0, md: 60 }} p="4">
+          {/*  {children}  */}
+
+          <Grid
+            templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
+            width={"100%"}
+            marginTop={"-550px"}
+            gap={2}
+            className={"products-small-screen-card"}
+          >
+            {mdata.length > 0 &&
+              mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
+          </Grid>
+          <div style={{}}>
+            <div
+              style={{
+                width: "30%",
+                display: "flex",
+                justifyContent: "center",
+                margin: "auto",
+              }}
             >
-              <DrawerContent>
-                <SidebarContent onClose={onClose} />
-              </DrawerContent>
-            </Drawer>
-            {/* mobilenav */}
-            <MobileNav
-              display={{ base: "flex", md: "none" }}
-              onOpen={onOpen}
-              onClick={handleltoh}
-              handlehtol={handlehtol}
-            />
-
-            <Box ml={{ base: 0, md: 60 }} p="4">
-              {/*  {children}  */}
-
-              <Grid
-                templateColumns={{ sm: "1fr", sm: "repeat(4, 1fr)" }}
-                width={"100%"}
-                marginTop={"-550px"}
-                gap={2}
-                className={"products-small-screen-card"}
-              >
-                {mdata.length > 0 &&
-                  mdata.map((item) => <FlowerCard key={item.id} {...item} />)}
-              </Grid>
-              <div style={{}}>
-                <div
-                  style={{
-                    width: "30%",
-                    display: "flex",
-                    justifyContent: "center",
-                    margin: "auto",
-                  }}
+              <Stack mt="5" direction="row" spacing={4} align="center">
+                <Button
+                  colorScheme="teal"
+                  variant="solid"
+                  isDisabled={page == 1}
+                  onClick={() => handleChange(-1)}
                 >
-                  <Stack mt="5" direction="row" spacing={4} align="center">
-                    <Button
-                      colorScheme="teal"
-                      variant="solid"
-                      isDisabled={page == 1}
-                      onClick={() => handleChange(-1)}
-                    >
-                      ⬅️Prev
-                    </Button>
+                  ⬅️Prev
+                </Button>
 
-                    <h3>{page}</h3>
-                    <Button
-                      colorScheme="teal"
-                      variant="solid"
-                      onClick={() => handleChange(1)}
-                    >
-                      Next➡️
-                    </Button>
-                  </Stack>
-                </div>
-                <Image
-                  mt="5"
-                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
-                />
-              </div>
-            </Box>
+                <h3>{page}</h3>
+                <Button
+                  colorScheme="teal"
+                  variant="solid"
+                  onClick={() => handleChange(1)}
+                >
+                  Next➡️
+                </Button>
+              </Stack>
+            </div>
+            <Image
+              mt="5"
+              src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+            />
           </div>
-        )}
+        </Box>
       </Box>
       <Footer />
     </div>
@@ -160,13 +205,10 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <RouterLink to="/">
+      <NavItem key="faizan" icon={FiHome}>
         {" "}
-        <NavItem key="faizan" icon={FiHome}>
-          {" "}
-          Home
-        </NavItem>
-      </RouterLink>
+        Home
+      </NavItem>
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         {" "}
         Sort
@@ -177,23 +219,23 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price Low to High
+        Price High to Low
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Cakes
+        Price High to Low
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Flowers
+        Price High to Low
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Plants
+        Price High to Low
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Chocolates
+        Price High to Low
       </NavItem>{" "}
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}

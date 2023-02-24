@@ -65,7 +65,9 @@ export default function Flowers({ children }) {
   const getData = (page) => {
     setLoad(true);
     axios
-      .get(`http://localhost:8018/chocos?_limit=8&_page=${page}`)
+      .get(
+        `https://talented-ox-parka.cyclic.app/api/chocos?_limit=8&_page=${page}`
+      )
       .then((res) => {
         console.log(res.data);
         setMdata(res.data);
