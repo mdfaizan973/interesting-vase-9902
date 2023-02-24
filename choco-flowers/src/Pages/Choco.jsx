@@ -61,13 +61,11 @@ export default function Flowers({ children }) {
   //       console.log(err);
   //     });
   // };
-
+  // https://quaint-panama-hat-bass.cyclic.app/api/Berry
   const getData = (page) => {
     setLoad(true);
     axios
-      .get(
-        `https://quaint-panama-hat-bass.cyclic.app/api/Berry?_limit=8&_page=${page}`
-      )
+      .get(`http://localhost:8018/chocos?_limit=8&_page=${page}`)
       .then((res) => {
         console.log(res.data);
         setMdata(res.data);

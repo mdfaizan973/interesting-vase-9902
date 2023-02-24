@@ -36,7 +36,7 @@ export default function SingleProducts() {
   console.log(id);
   const getDta = async () => {
     axios
-      .get(`https://quaint-panama-hat-bass.cyclic.app/api/flower_pot/${id}`)
+      .get(`http://localhost:8018/all-pro/${id}`)
       .then((res) => {
         console.log(res.data);
         setProds(res.data);
