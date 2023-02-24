@@ -9,15 +9,15 @@ import DataFContextProvider from "./Context/DataF";
 import CakeContextProvider from "./Context/CakesCont";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <CakeContextProvider>
-    <DataFContextProvider>
-      <BrowserRouter>
-        <ChakraProvider>
-          <App />
-        </ChakraProvider>
-      </BrowserRouter>
-    </DataFContextProvider>
-  </CakeContextProvider>
+  // <CakeContextProvider>
+  // <DataFContextProvider>
+  <BrowserRouter>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
+  </BrowserRouter>
+  // </DataFContextProvider>
+  // </CakeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

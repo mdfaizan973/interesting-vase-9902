@@ -1,10 +1,9 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import Navbar from "./../Components/Navbar";
 import HoveNav from "./../Components/HoveNav";
 import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
-import axios from "axios";
 import {
   IconButton,
   CloseButton,
@@ -23,10 +22,10 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
-import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { CakeContext } from "../Context/CakesCont";
-export default function Cakes({ children }) {
+import { Link as RouterLink } from "react-router-dom";
+export default function Cakes() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [searchParams, setSearchParams] = useSearchParams();
   // const [load, setLoad] = useState(false);
@@ -161,10 +160,13 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <NavItem key="faizan" icon={FiHome}>
+      <RouterLink to="/">
         {" "}
-        Home
-      </NavItem>
+        <NavItem key="faizan" icon={FiHome}>
+          {" "}
+          Home
+        </NavItem>
+      </RouterLink>
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         {" "}
         Sort
@@ -175,23 +177,23 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price High to Low
+        Price Low to High
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price High to Low
+        Cakes
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price High to Low
+        Flowers
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price High to Low
+        Plants
       </NavItem>
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}
-        Price High to Low
+        Chocolates
       </NavItem>{" "}
       <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
         {" "}

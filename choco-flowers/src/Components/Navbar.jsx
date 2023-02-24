@@ -97,7 +97,7 @@ export default function Navbar() {
               </Button>
 
               <Menu>
-                <RouterLink to="/cartpage">
+                <RouterLink to="/cart">
                   <Center>
                     {" "}
                     <Text
