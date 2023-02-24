@@ -6,15 +6,18 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import DataFContextProvider from "./Context/DataF";
+import CakeContextProvider from "./Context/CakesCont";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <DataFContextProvider>
-    <BrowserRouter>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </BrowserRouter>
-  </DataFContextProvider>
+  <CakeContextProvider>
+    <DataFContextProvider>
+      <BrowserRouter>
+        <ChakraProvider>
+          <App />
+        </ChakraProvider>
+      </BrowserRouter>
+    </DataFContextProvider>
+  </CakeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

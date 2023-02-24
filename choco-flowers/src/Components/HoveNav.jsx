@@ -224,17 +224,17 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Flower Plant",
+    label: "Plants",
     children: [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/flowers",
+        href: "/plants",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/flowers",
+        href: "/plants",
       },
     ],
   },
@@ -259,12 +259,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
@@ -274,12 +274,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
@@ -299,17 +299,17 @@ const NAV_ITEMS = [
     ],
   },
   {
-    label: "Occasions",
+    label: "BirhtDay",
     children: [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/cakes",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/cakes",
       },
     ],
   },
@@ -319,12 +319,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/cakes",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/cakes",
       },
     ],
   },
@@ -334,12 +334,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/cakes",
       },
     ],
   },
@@ -364,12 +364,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/cakes",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/cakes",
       },
     ],
   },
@@ -379,12 +379,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
@@ -395,12 +395,12 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/plants",
+        href: "/flowers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "/plants",
+        href: "/flowers",
       },
     ],
   },
