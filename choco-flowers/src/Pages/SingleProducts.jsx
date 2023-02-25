@@ -38,7 +38,9 @@ export default function SingleProducts() {
   const [load, setLoad] = useState(false);
   const [cartdata, setCartdata] = useState([]);
   const { id } = useParams();
-  console.log(id);
+  useEffect(() => {
+    getDta();
+  }, [id]);
   const getDta = async () => {
     setLoad(true);
     axios
@@ -53,10 +55,31 @@ export default function SingleProducts() {
         setLoad(false);
       });
   };
-  useEffect(() => {
-    getDta();
-  }, [id]);
-  console.log(prods);
+
+  // console.log(prods);
+
+  const handlecart = () => {
+    axios
+      .get(`https://talented-ox-parka.cyclic.app/api/all-pro/${id}`)
+      .then((res) => {
+        console.log(res.data);
+        cartval(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    const cartval = (pr) => {
+      axios
+        .post("http://localhost:8010/cartItems", pr)
+        .then((res) => {
+          console.log("res.data: ", res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+  };
 
   return (
     <div>
@@ -173,7 +196,7 @@ export default function SingleProducts() {
               </Box>
             </Stack>
             <Button
-              // onClick={handlecart}
+              onClick={handlecart}
               rounded={"lg"}
               w={"full"}
               mt={8}
