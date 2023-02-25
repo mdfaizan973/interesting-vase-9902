@@ -1702,5 +1702,29 @@
       "rating": "⭐⭐⭐⭐",
       "id": "2023-02-24T09:20:41.080Z"
     }
+  ],
+  "cartItems": [
+    {
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
+      "title": "Happy Birthday Jade Plant Terrarium",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "699",
+      "rating": "⭐⭐⭐⭐",
+      "id": 33556
+    },
+    {
+      "name": "Cake",
+      "image1": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_2.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20221130174854/butterscotch-cake-half-kg_4.jpg",
+      "title": "Fudge Brownie Cake Half kg",
+      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+      "price": "410",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T09:14:45.576Z"
+    }
   ]
 }

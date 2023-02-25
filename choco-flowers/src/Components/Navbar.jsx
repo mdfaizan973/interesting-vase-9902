@@ -1,7 +1,8 @@
-import React, { ReactNode } from "react";
-import { Image } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { Image, Input } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { Input } from "@chakra-ui/react";
+import { CartContext } from "..//Pages/cartlength";
+
 import {
   Box,
   Flex,
@@ -9,11 +10,6 @@ import {
   Link,
   Button,
   Menu,
-  MenuButton,
-  MenuList,
-  MenuGroup,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Text,
@@ -22,10 +18,8 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Modal, ModalOverlay, ModalContent } from "@chakra-ui/react";
-import { FaCartPlus, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
-import Signup from "./../Pages/Signup";
 import LoginPop from "./../PopUp/LogInPop";
 
 const NavLink = ({ children }) => (
@@ -43,6 +37,9 @@ const NavLink = ({ children }) => (
   </Link>
 );
 export default function Navbar() {
+  const { cartd, totalcart } = useContext(CartContext);
+  // console.log("data", totalcart);
+
   const { colorMode, toggleColorMode } = useColorMode();
   //   const { isOpen, onOpen, onClose } = useDisclosure();
   //   let navigate = useNavigate();
@@ -106,7 +103,7 @@ export default function Navbar() {
                       top="2px"
                       color="red"
                     >
-                      TotCrt-0
+                      {totalcart}
                       {/*} 
                       {anser} */}
                     </Text>
