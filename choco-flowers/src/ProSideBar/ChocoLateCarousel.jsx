@@ -7,37 +7,37 @@ import { Box, Image } from "@chakra-ui/react";
 const sliderData1 = [
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20221108152330/chokola-treasure-premium-wooden-box-hamper_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20200206074634/chocolate-heart-bouquet_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20220603122240/assorted-truffles-8-pcs_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20221209121220/chocolatey-indulgence-festive-pack_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20220214095947/chokola-harmony-special-chocolate-hamper_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20210316104731/kitkat-chocolates-birthday_1.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://www.fnp.com/images/pr/l/v20221116115736/premium-chocolates-for-you_1.jpg",
   },
 ];
 
 export default function ChocoLateCarousel() {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="130px" marginLeft="40px" zIndex={1}>
+    <Box position="absolute" marginTop="200px" marginLeft="40px" zIndex={1}>
       <ChevronLeftIcon
         boxSize={10}
         background="gray.50"
@@ -50,7 +50,7 @@ export default function ChocoLateCarousel() {
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="-50px" marginLeft="1200px">
+    <Box position="absolute" marginTop="-200px" marginLeft="1200px">
       <ChevronRightIcon
         boxSize={10}
         background="gray.50"
@@ -111,7 +111,7 @@ export default function ChocoLateCarousel() {
           return (
             <div key={index}>
               <Box padding="10px">
-                <Image borderRadius="8px" src={el.image} />
+                <Image w="80%" borderRadius="8px" src={el.image} />
               </Box>
             </div>
           );
