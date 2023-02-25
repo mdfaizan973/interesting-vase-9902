@@ -18,10 +18,11 @@ export default function ExclusiveGifts() {
             Sympathy
           </Heading>
         </div>
+
         <div>
-          <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-ethereal-bliss-199418-m.jpg" />
+          <img src="https://imgcdn.floweraura.com/moner_plant_0.jpg?tr=w-310,h-310,dpr-1.5,q-70" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Get Well
+            Fileds of Euro
           </Heading>
         </div>
         <div>
@@ -34,19 +35,21 @@ export default function ExclusiveGifts() {
           </Heading>
         </div>
         <div>
-          <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-pink-extravaganza-199417-m.jpg" />
+          <img src="https://imgcdn.floweraura.com/ficus-bonsai-plant-A.jpg?tr=w-304,dpr-1.5,q-70" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
             Just Because
           </Heading>
         </div>
+
         <div>
-          <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-the-wild-garden-hamper-199419-m.jpg" />
+          <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-ethereal-bliss-199418-m.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
-            Fileds of Euro
+            Get Well
           </Heading>
         </div>
+
         <div>
-          <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt7prodlp/products/p-one-true-love-202537-m.jpg" />
+          <img src="https://imgcdn.floweraura.com/desktop_plant_2.jpg?tr=w-310,h-310,dpr-1.5,q-70" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
             Floral Embarac
           </Heading>

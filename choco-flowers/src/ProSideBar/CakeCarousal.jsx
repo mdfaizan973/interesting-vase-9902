@@ -6,32 +6,25 @@ import Slider from "react-slick";
 import { Box, Image } from "@chakra-ui/react";
 const sliderData1 = [
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/cocoa.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/img3.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/img1.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/cherry.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/blueberry.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/cocoa.jpg",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/home/almond.jpg",
   },
 ];
 
