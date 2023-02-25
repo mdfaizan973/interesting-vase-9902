@@ -232,26 +232,31 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         {" "}
         Price High to Low
       </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>{" "}
-      <NavItem key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
+      <RouterLink to="/plants">
+        <NavItem key="faizan" icon={FiCompass}>
+          Plants
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/choco">
+        <NavItem key="faizan" icon={FiCompass}>
+          Chocolate
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/flowers">
+        <NavItem key="faizan" icon={FiCompass}>
+          Flowers
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          Cakes
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          BirthDay
+        </NavItem>
+      </RouterLink>
     </Box>
   );
 };

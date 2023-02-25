@@ -6,6 +6,7 @@ import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
 import axios from "axios";
 import Allpagesome from "../ProSideBar/Allpagesome";
+import { Link as RouterLink } from "react-router-dom";
 
 import {
   IconButton,
@@ -88,13 +89,13 @@ export default function Flowers({ children }) {
   // console.log("my api data is ", mdata);
 
   const handleltoh = () => {
-    //   let asc = mdata.sort((a, b) => a.price - b.price);
-    //   setMdata([...asc]);
+    let asc = mdata.sort((a, b) => a.price - b.price);
+    setMdata([...asc]);
     //   // alert("hello");
   };
   const handlehtol = () => {
-    //   let desc = mdata.sort((a, b) => b.price - a.price);
-    //   setMdata([...desc]);
+    let desc = mdata.sort((a, b) => b.price - a.price);
+    setMdata([...desc]);
     //   // alert("hello");
   };
   const handleChange = (val) => {
@@ -218,12 +219,12 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <NavItem key="faizan" icon={FiHome}>
-        {" "}
-        Home
-      </NavItem>
-      <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
-        {" "}
+      <RouterLink to="/">
+        <NavItem key="faizan" icon={FiHome}>
+          Home
+        </NavItem>
+      </RouterLink>
+      <NavItem fontSize={"25px"} key="faizan" icon={FiTrendingUp}>
         Sort
       </NavItem>
       <NavItem onClick={handleltoh} key="faizan" icon={FiCompass}>
@@ -234,26 +235,31 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         {" "}
         Price High to Low
       </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>{" "}
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
+      <RouterLink to="/plants">
+        <NavItem key="faizan" icon={FiCompass}>
+          Plants
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/choco">
+        <NavItem key="faizan" icon={FiCompass}>
+          Chocolate
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/flowers">
+        <NavItem key="faizan" icon={FiCompass}>
+          Flowers
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          Cakes
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          BirthDay
+        </NavItem>
+      </RouterLink>
     </Box>
   );
 };
