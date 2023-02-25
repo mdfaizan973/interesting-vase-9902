@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
 import Allpagesome from "../ProSideBar/Allpagesome";
+import ChocoLateCarousel from "../ProSideBar/ChocoLateCarousel";
 import axios from "axios";
 import {
   IconButton,
@@ -185,6 +186,7 @@ export default function Flowers({ children }) {
                   src="https://images.contentstack.io/v3/assets/blt22a4279bb3e9cfce/blta459f510909312c8/63caaf13c1c5071069860f10/FY21_SB_Marketing_BIrthday_10_26_20_smaller.jpg?quality=75&auto=webp&optimize={medium}"
                 />
               </div>
+              <ChocoLateCarousel />
               <Allpagesome />
             </Box>
           </div>
