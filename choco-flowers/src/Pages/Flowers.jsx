@@ -27,6 +27,7 @@ import {
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import FlowerCarousal from "../ProSideBar/FlowerCarousal";
 
 export default function Flowers({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -187,6 +188,7 @@ export default function Flowers({ children }) {
                   src="https://www.floraindia.com/media/codazon/slideshow/f/l/flowers_banner.jpg"
                 />
               </div>
+              <FlowerCarousal />
               <Allpagesome />
             </Box>
           </div>
