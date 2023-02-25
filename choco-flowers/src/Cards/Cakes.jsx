@@ -19,7 +19,7 @@ export default function Cakes() {
           </Heading>
         </div>
         <div>
-          <img src="https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg" />
+          <img src="https://www.fnp.com/images/pr/l/v20220603122240/assorted-truffles-8-pcs_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
             ChocoLate Cakes
           </Heading>
@@ -34,7 +34,7 @@ export default function Cakes() {
           </Heading>
         </div>
         <div>
-          <img src="https://www.fnp.com/images/pr/l/v20211130132724/dripping-2-tier-butterscotch-cake-1-5-kg_1.jpg" />
+          <img src="https://www.fnp.com/images/pr/l/v20200206074634/chocolate-heart-bouquet_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
             Pineapple Cakes
           </Heading>
@@ -46,14 +46,12 @@ export default function Cakes() {
           </Heading>
         </div>
         <div>
-          <img src="https://www.fnp.com/images/pr/l/v20221205145728/chocolate-caramel-fudge-cake-half-kg_1.jpg" />
+          <img src="https://www.fnp.com/images/pr/l/v20230105124723/chocolate-delight-love-hamper_1.jpg" />
           <Heading as="h1" size="sm" mt={6} mb={2}>
             Black Forest
           </Heading>
         </div>
       </div>
-
-      {/**/}
     </>
   );
 }

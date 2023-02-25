@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import HoveNav from "../Components/HoveNav";
 import Navbar from "../Components/Navbar";
 import Cakes from "../Cards/Cakes";
+import ProCarousal from "./../ProSideBar/ProCarousal";
 
 export default function Cart() {
   return (
@@ -12,7 +13,7 @@ export default function Cart() {
       <Navbar />
       <HoveNav />
       <ExclusiveGifts />
-      <MultiPro />
+      <ProCarousal />
       <Cakes />
       <Footer />
     </div>

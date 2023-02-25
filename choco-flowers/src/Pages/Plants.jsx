@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
 import axios from "axios";
+import { Link as RouterLink } from "react-router-dom";
 import {
   IconButton,
   CloseButton,
@@ -25,6 +26,8 @@ import {
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Allpagesome from "./../ProSideBar/Allpagesome";
+import PlantsCarousal from "../ProSideBar/plantsCarousal";
 
 export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -85,14 +88,12 @@ export default function Cakes({ children }) {
   // console.log("my api data is ", mdata);
 
   const handleltoh = () => {
-    //   let asc = mdata.sort((a, b) => a.price - b.price);
-    //   setMdata([...asc]);
-    //   // alert("hello");
+    let asc = mdata.sort((a, b) => a.price - b.price);
+    setMdata([...asc]);
   };
   const handlehtol = () => {
-    //   let desc = mdata.sort((a, b) => b.price - a.price);
-    //   setMdata([...desc]);
-    //   // alert("hello");
+    let desc = mdata.sort((a, b) => b.price - a.price);
+    setMdata([...desc]);
   };
   const handleChange = (val) => {
     setPage(page + val);
@@ -180,9 +181,13 @@ export default function Cakes({ children }) {
                 </div>
                 <Image
                   mt="5"
-                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+                  w="100%"
+                  h="30vh"
+                  src="https://scontent.fpat2-1.fna.fbcdn.net/v/t39.30808-6/301915081_628365288921908_6285180264223205675_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=T0Qdjc4-BZAAX-R0Tyd&_nc_ht=scontent.fpat2-1.fna&oh=00_AfD3TL87ekpBCai-Nu9QSjjMPHdKkDRR83STraN7b87goQ&oe=63FDE9B5"
                 />
               </div>
+              <PlantsCarousal />
+              <Allpagesome />
             </Box>
           </div>
         )}
@@ -211,12 +216,12 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <NavItem key="faizan" icon={FiHome}>
-        {" "}
-        Home
-      </NavItem>
-      <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
-        {" "}
+      <RouterLink to="/">
+        <NavItem key="faizan" icon={FiHome}>
+          Home
+        </NavItem>
+      </RouterLink>
+      <NavItem fontSize={"25px"} key="faizan" icon={FiTrendingUp}>
         Sort
       </NavItem>
       <NavItem onClick={handleltoh} key="faizan" icon={FiCompass}>
@@ -227,26 +232,31 @@ const SidebarContent = ({ handlehtol, handleltoh, onClose, ...rest }) => {
         {" "}
         Price High to Low
       </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>{" "}
-      <NavItem onClick={handlehtol} key="faizan" icon={FiCompass}>
-        {" "}
-        Price High to Low
-      </NavItem>
+      <RouterLink to="/plants">
+        <NavItem key="faizan" icon={FiCompass}>
+          Plants
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/choco">
+        <NavItem key="faizan" icon={FiCompass}>
+          Chocolate
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/flowers">
+        <NavItem key="faizan" icon={FiCompass}>
+          Flowers
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          Cakes
+        </NavItem>
+      </RouterLink>
+      <RouterLink to="/cakes">
+        <NavItem key="faizan" icon={FiCompass}>
+          BirthDay
+        </NavItem>
+      </RouterLink>
     </Box>
   );
 };

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import ProCarousal from "../ProSideBar/ProCarousal";
 import {
   Box,
   Flex,
@@ -170,6 +171,8 @@ export default function CustmerSay() {
           </Stack>
         </Container>
       </Box>
+      <ProCarousal />
+
       <Image src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt34prodlp/banners/media_coverage_d_interflora_illustration_20220904.png" />
     </>
   );

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FlowerGetData from "./FlowerGetData";
+import axios from "axios";
 import {
   Button,
   Flex,
@@ -17,8 +18,9 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 
+import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+// http://localhost:8010/flowers
 export default function FlowerForm() {
   return (
     <div>
@@ -115,6 +117,21 @@ export default function FlowerForm() {
 }
 function FadeEx() {
   const { isOpen, onToggle } = useDisclosure();
+  const [floData, setFlowData] = useState([]);
+  const getData = () => {
+    axios
+      .get("http://localhost:8010/flowers")
+      .then((res) => {
+        console.log(res.data);
+
+        setFlowData(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  console.log(floData);
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <>
       <Button onClick={onToggle} colorScheme="green" w="100%" textAlign="start">
@@ -123,7 +140,7 @@ function FadeEx() {
       </Button>
       <Collapse in={isOpen} animateOpacity>
         <Box
-          p="40px"
+          // p="40px"
           color="white"
           mt="4"
           //   bg="teal.500"
@@ -131,7 +148,9 @@ function FadeEx() {
           shadow="md"
         >
           {/* Here my all the data wiil be -> Components */}
-          <FlowerGetData />
+          {floData.map((item) => (
+            <FlowerGetData key={item.id} {...item} fdata={floData} />
+          ))}{" "}
         </Box>
       </Collapse>
     </>

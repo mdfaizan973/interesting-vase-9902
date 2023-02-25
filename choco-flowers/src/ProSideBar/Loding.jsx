@@ -12,21 +12,28 @@ export default function Loding() {
           size="xl"
         />
 
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
-        <Skeleton height="100px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
+        <Skeleton height="60px" />
       </Stack>
     </div>
   );

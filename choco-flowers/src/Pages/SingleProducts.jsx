@@ -30,6 +30,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
 import Loding from "./../ProSideBar/Loding";
+import ProCarousal from "./../ProSideBar/ProCarousal";
 
 export default function SingleProducts() {
   const [prods, setProds] = useState([]);
@@ -198,7 +199,9 @@ export default function SingleProducts() {
           </Stack>
         </SimpleGrid>
       </Container>
-      <Box textAlign="center" py={10} px={6}></Box>
+      <Box textAlign="center" py={10} px={6}>
+        <ProCarousal />
+      </Box>
       <Cakes />
       <MultiPro />
       <ExclusiveGifts />
