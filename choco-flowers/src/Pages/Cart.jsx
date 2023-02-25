@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
 import Footer from "../Components/Footer";
 import HoveNav from "../Components/HoveNav";
@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar";
 import Cakes from "../Cards/Cakes";
 import ProCarousal from "./../ProSideBar/ProCarousal";
 import axios from "axios";
+// import { CartContext } from "./cartlength";
 import {
   Divider,
   Container,
@@ -20,22 +21,47 @@ import {
 } from "@chakra-ui/react";
 export default function Cart() {
   const [cartData, setCartData] = useState([]);
+  const [qties, setQties] = useState(1);
+  // const [qty, setQty] = useState([]);
+
   useEffect(() => {
     MyCartData();
-  }, []);
+  }, [cartData]);
   const MyCartData = () => {
     axios
       .get("http://localhost:8010/cartItems")
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setCartData(res.data);
+        // let arr = new Array(res.data.length).fill(1);
+        // setQty(arr);
       })
       .catch((err) => console.log(err));
   };
 
+  const deletecartItem = (id) => {
+    axios
+      .delete(`http://localhost:8010/cartItems/${id}`)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
+
+  const handleqty = (val) => {
+    setQties(val + qties);
+  };
+
+  // let sum = 0;
+  // for (let i = 0; i < cartData.length; i++) {
+  //   sum += +cartData[i].price * qty[i];
+  // }
+
+  // console.log("my sum is :-", sum);
+
+  let totalcart = cartData.length;
+  // console.log("cdata", totalcart);
   return (
     <div>
-      <Navbar />
+      <Navbar totalcart={totalcart} />
       <HoveNav />
 
       <div
@@ -51,13 +77,14 @@ export default function Cart() {
                 border: "1px solid grey",
                 alignItems: "center",
                 width: "80%",
+                padding: "5px",
                 borderRadius: "15px",
                 marginTop: "5px",
                 boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
             >
               <Container>
-                <Image w="50%" src={item.image1} />
+                <Image w="60%" src={item.image1} />
               </Container>
               <Container>
                 <Heading color="green" fontSize="2xl">
@@ -67,13 +94,25 @@ export default function Cart() {
                 <br />
                 <Divider w="60%" m="auto" />
                 <HStack ml="25px" textAlign="center">
-                  <Button colorScheme="blue">+</Button>
-                  <Button>1</Button>
-                  <Button colorScheme="blue">-</Button>
+                  <Button onClick={() => handleqty(1)} colorScheme="blue">
+                    +
+                  </Button>
+                  <Button>{qties}</Button>
+                  <Button
+                    isDisabled={qties == 1}
+                    onClick={() => handleqty(-1)}
+                    colorScheme="blue"
+                  >
+                    -
+                  </Button>
 
                   <Text fontSize="2xl">₹ {item.price}</Text>
                 </HStack>
-                <Button ml="70%" colorScheme="red">
+                <Button
+                  ml="70%"
+                  colorScheme="red"
+                  onClick={() => deletecartItem(item.id)}
+                >
                   Delete
                 </Button>
               </Container>
@@ -97,6 +136,7 @@ export default function Cart() {
           </Box>
         </Container>
       </div>
+      <br />
 
       <Divider w="60%" m="auto" />
       <br />

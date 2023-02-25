@@ -1705,59 +1705,26 @@
   ],
   "cartItems": [
     {
-      "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221118185237/heavenly-butterscotch-cream-cake-half-kg_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221118185238/heavenly-butterscotch-cream-cake-half-kg_2.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221118185238/heavenly-butterscotch-cream-cake-half-kg_4.jpg",
-      "title": "Heavenly Butterscotch Cream Cake- Half Kg",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "599",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:11:15.916Z"
-    },
-    {
-      "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221130174924/pineapple-cake-half-kg_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221130174924/pineapple-cake-half-kg_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221130174925/pineapple-cake-half-kg_4.jpg",
-      "title": "Pineapple Cake Half kg",
-      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-      "price": "659",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:13:20.066Z"
-    },
-    {
-      "name": "Flower Baby-Plant ",
-      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/161834s050218x.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101199lkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158016mkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "title": "Peace Lily Plant for Sympathy",
-      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
-      "price": "169",
-      "rating": "⭐⭐⭐",
-      "id": 2
-    },
-    {
       "name": "Plant",
-      "image1": "https://www.fnp.com/images/pr/l/v20180518122004/exquisite-three-layer-bamboo-terrarium_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20180518122005/exquisite-three-layer-bamboo-terrarium_2.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20180518122005/exquisite-three-layer-bamboo-terrarium_2.jpg",
-      "title": "Exquisite Three Layer Bamboo Terrarium",
+      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
+      "title": "Happy Birthday Jade Plant Terrarium",
       "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "549",
+      "price": "699",
       "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:04:10.469Z"
+      "id": 33556
     },
     {
       "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221118185234/fruit-overload-cake-half-kg_3.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221118185234/fruit-overload-cake-half-kg_4.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221118185234/fruit-overload-cake-half-kg_5.jpg",
-      "title": "Fruit Overload Cake- Half Kg",
+      "image1": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_2.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20221130174854/butterscotch-cake-half-kg_4.jpg",
+      "title": "Fudge Brownie Cake Half kg",
       "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-      "price": "810",
+      "price": "410",
       "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:15:23.903Z"
+      "id": "2023-02-24T09:14:45.576Z"
     }
   ]
 }

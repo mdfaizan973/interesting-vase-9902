@@ -7,7 +7,8 @@ import Cakes from "../Cards/Cakes";
 import Footer from "../Components/Footer";
 import MultiPro from "./../Cards/MultiPro";
 import { FaCartPlus } from "react-icons/fa";
-// import { Router as RouterLink } from "react-router-dom";
+import { Router as RouterLink } from "react-router-dom";
+
 import {
   Box,
   chakra,
@@ -30,10 +31,12 @@ import {
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
 import ExclusiveGifts from "../Cards/ExclusiveGifts";
-import Loding from "./../ProSideBar/Loding";
 import ProCarousal from "./../ProSideBar/ProCarousal";
+import { useToast, WrapItem, Wrap } from "@chakra-ui/react";
 
 export default function SingleProducts() {
+  const toast = useToast();
+  const positions = ["top"];
   const [prods, setProds] = useState([]);
   const [load, setLoad] = useState(false);
   const [cartdata, setCartdata] = useState([]);
@@ -79,6 +82,7 @@ export default function SingleProducts() {
           console.log(err);
         });
     };
+    // <AddCartToast />;
   };
 
   return (
@@ -183,14 +187,14 @@ export default function SingleProducts() {
 
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                   <List spacing={2}>
+                    <ListItem>Name</ListItem>
+                    <ListItem>Rating</ListItem>
                     <ListItem>Category</ListItem>
-                    <ListItem>Master Chronometer Certified</ListItem>{" "}
-                    <ListItem>Tachymeter</ListItem>
                   </List>
                   <List spacing={2}>
+                    <ListItem>{prods.name}</ListItem>
+                    <ListItem>{prods.rating}</ListItem>
                     <ListItem> {prods.title} </ListItem>
-                    <ListItem>Chronometer</ListItem>
-                    <ListItem>Small seconds</ListItem>
                   </List>
                 </SimpleGrid>
               </Box>
@@ -203,14 +207,31 @@ export default function SingleProducts() {
               size={"lg"}
               py={"7"}
               colorScheme="red"
-              color={useColorModeValue("white", "gray.900")}
+              // color={useColorModeValue("white", "gray.900")}
               textTransform={"uppercase"}
               _hover={{
                 transform: "translateY(2px)",
                 boxShadow: "lg",
               }}
             >
-              Add to cart - <FaCartPlus />
+              <Wrap>
+                {positions.map((position, i) => (
+                  <WrapItem key={i}>
+                    <Button
+                      colorScheme="red"
+                      onClick={() =>
+                        toast({
+                          title: "Added To Cart",
+                          position: position,
+                          isClosable: true,
+                        })
+                      }
+                    >
+                      Add to cart - <FaCartPlus />
+                    </Button>
+                  </WrapItem>
+                ))}
+              </Wrap>
             </Button>
             <Stack
               direction="row"
@@ -233,4 +254,20 @@ export default function SingleProducts() {
     </div>
   );
 }
-//  <FpicCards />
+// <Button
+// onClick={handlecart}
+// rounded={"lg"}
+// w={"full"}
+// mt={8}
+// size={"lg"}
+// py={"7"}
+// colorScheme="red"
+// color={useColorModeValue("white", "gray.900")}
+// textTransform={"uppercase"}
+// _hover={{
+//   transform: "translateY(2px)",
+//   boxShadow: "lg",
+// }}
+// >
+// Add to cart - <FaCartPlus />
+// </Button>

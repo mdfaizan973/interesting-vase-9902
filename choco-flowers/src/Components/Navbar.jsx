@@ -1,7 +1,8 @@
-import React, { ReactNode } from "react";
-import { Image } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { Image, Input } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { Input } from "@chakra-ui/react";
+import { CartContext } from "..//Pages/cartlength";
+
 import {
   Box,
   Flex,
@@ -43,6 +44,9 @@ const NavLink = ({ children }) => (
   </Link>
 );
 export default function Navbar() {
+  const { cartd, totalcart } = useContext(CartContext);
+  // console.log("data", totalcart);
+
   const { colorMode, toggleColorMode } = useColorMode();
   //   const { isOpen, onOpen, onClose } = useDisclosure();
   //   let navigate = useNavigate();
@@ -106,7 +110,7 @@ export default function Navbar() {
                       top="2px"
                       color="red"
                     >
-                      TotCrt-0
+                      {totalcart}
                       {/*} 
                       {anser} */}
                     </Text>
