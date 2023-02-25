@@ -6,6 +6,7 @@ import HoveNav from "../Components/HoveNav";
 import Cakes from "../Cards/Cakes";
 import Footer from "../Components/Footer";
 import MultiPro from "./../Cards/MultiPro";
+import { FaCartPlus } from "react-icons/fa";
 // import { Router as RouterLink } from "react-router-dom";
 import {
   Box,
@@ -84,16 +85,16 @@ export default function SingleProducts() {
                 src={prods.image2}
                 fit={"cover"}
                 align={"center"}
-                w={"49%"}
+                w={"50%"}
                 h={{ base: "100%", sm: "400px", lg: "180px" }}
               />
               <Image
-                rounded={"md"}
+                rounded={"lg"}
                 alt={"product image"}
                 src={prods.image3}
                 fit={"cover"}
                 align={"center"}
-                w={"49%"}
+                w={"50%"}
                 h={{ base: "100%", sm: "400px", lg: "180px" }}
               />
             </HStack>
@@ -154,7 +155,7 @@ export default function SingleProducts() {
                   textTransform={"uppercase"}
                   mb={"4"}
                 >
-                  BRAND: {prods.brand}
+                  BRAND: {prods.name}
                 </Text>
 
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
@@ -164,7 +165,7 @@ export default function SingleProducts() {
                     <ListItem>Tachymeter</ListItem>
                   </List>
                   <List spacing={2}>
-                    <ListItem> {prods.category} </ListItem>
+                    <ListItem> {prods.title} </ListItem>
                     <ListItem>Chronometer</ListItem>
                     <ListItem>Small seconds</ListItem>
                   </List>
@@ -173,12 +174,12 @@ export default function SingleProducts() {
             </Stack>
             <Button
               // onClick={handlecart}
-              rounded={"none"}
+              rounded={"lg"}
               w={"full"}
               mt={8}
               size={"lg"}
               py={"7"}
-              bg={useColorModeValue("gray.900", "gray.50")}
+              colorScheme="red"
               color={useColorModeValue("white", "gray.900")}
               textTransform={"uppercase"}
               _hover={{
@@ -186,7 +187,7 @@ export default function SingleProducts() {
                 boxShadow: "lg",
               }}
             >
-              Add to cart
+              Add to cart - <FaCartPlus />
             </Button>
             <Stack
               direction="row"
