@@ -7,37 +7,37 @@ import { Box, Image } from "@chakra-ui/react";
 const sliderData1 = [
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/small-sitalpati-planter-32143502999684.jpg?v=1673868611&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/single-propagation-tube-wooden-test-tube-planter-32259146285188.jpg?v=1675516494&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/small-white-tivoli-planter-31977987768452.jpg?v=1675617310&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/unnamed_2.jpg?v=1668493851&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/small-ivory-zuri-vase-ball-rib-31642716569732.jpg?v=1675633145&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/small-natural-square-cane-planter-32143794503812.jpg?v=1673867879&width=375",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/small-merlot-red-zuri-vase-ball-groove-31642330660996.jpg?v=1676021220&width=375",
   },
 ];
 
 export default function PlantsCarousal() {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="130px" marginLeft="40px" zIndex={1}>
+    <Box position="absolute" marginTop="200px" marginLeft="40px" zIndex={1}>
       <ChevronLeftIcon
         boxSize={10}
         background="gray.50"
@@ -50,7 +50,7 @@ export default function PlantsCarousal() {
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="-50px" marginLeft="1200px">
+    <Box position="absolute" marginTop="-200px" marginLeft="1200px">
       <ChevronRightIcon
         boxSize={10}
         background="gray.50"

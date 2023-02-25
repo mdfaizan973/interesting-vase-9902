@@ -6,32 +6,30 @@ import Slider from "react-slick";
 import { Box, Image } from "@chakra-ui/react";
 const sliderData1 = [
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://www.justbake.in/assets/img/slider/IMG-20210525-WA0028.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://images.contentstack.io/v3/assets/blt89dbf1c763ec00a6/blt4380d3f95942a921/63d2dc365ba46f75ddba032f/230126-Occasions-Dept-2Spot-Birthday.jpg?quality=85&auto=webp&optimize={medium}",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://images.contentstack.io/v3/assets/blt89dbf1c763ec00a6/bltf2d879da01817a5c/63d2dc5e9d7bcb542235067a/230126-Occasions-Dept-2Spot-Sympathy.jpg?quality=85&auto=webp&optimize={medium}",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://images.contentstack.io/v3/assets/blt22a4279bb3e9cfce/blt352e2643d9812b7a/63f387f7fa12dd32abd5c6e2/SB_LoveandRomance_FY23_12-19-22_(1).jpg?quality=60&auto=webp&optimize={medium}",
+  },
+  {
+    image: "https://www.justbake.in/assets/img/slider/IMG-20210525-WA0028.jpg",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://images.contentstack.io/v3/assets/blt89dbf1c763ec00a6/blt4380d3f95942a921/63d2dc365ba46f75ddba032f/230126-Occasions-Dept-2Spot-Birthday.jpg?quality=85&auto=webp&optimize={medium}",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
-  },
-  {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://images.contentstack.io/v3/assets/blt89dbf1c763ec00a6/bltf2d879da01817a5c/63d2dc5e9d7bcb542235067a/230126-Occasions-Dept-2Spot-Sympathy.jpg?quality=85&auto=webp&optimize={medium}",
   },
 ];
 

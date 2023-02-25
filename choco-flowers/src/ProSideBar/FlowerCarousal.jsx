@@ -6,38 +6,34 @@ import Slider from "react-slick";
 import { Box, Image } from "@chakra-ui/react";
 const sliderData1 = [
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://imgcdn.floweraura.com/DSC_7697_4.jpg?tr=w-304,dpr-1.5,q-70",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://imgcdn.floweraura.com/exotic_flower_d.jpg?tr=w-300,dpr-1.5,q-70",
+  },
+  {
+    image: "https://imgcdn.floweraura.com/lilies_0_1.jpg?tr=w-300,dpr-1.5,q-70",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://imgcdn.floweraura.com/flower_box_0_1.jpg?tr=w-300,dpr-1.5,q-70",
   },
   {
     image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+      "https://imgcdn.floweraura.com/anniversary_10_1.jpg?tr=w-300,dpr-1.5,q-70",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://imgcdn.floweraura.com/DSC_1308.jpg?tr=w-304,dpr-1.5,q-70",
   },
   {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
-  },
-  {
-    image:
-      "https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70",
+    image: "https://imgcdn.floweraura.com/DSC_6435.jpg?tr=w-304,dpr-1.5,q-70",
   },
 ];
 
 export default function FlowerCarousal() {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="130px" marginLeft="40px" zIndex={1}>
+    <Box position="absolute" marginTop="200px" marginLeft="40px" zIndex={1}>
       <ChevronLeftIcon
         boxSize={10}
         background="gray.50"
@@ -50,7 +46,7 @@ export default function FlowerCarousal() {
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <Box position="absolute" marginTop="-50px" marginLeft="1200px">
+    <Box position="absolute" marginTop="-200px" marginLeft="1200px">
       <ChevronRightIcon
         boxSize={10}
         background="gray.50"
@@ -111,7 +107,7 @@ export default function FlowerCarousal() {
           return (
             <div key={index}>
               <Box padding="10px">
-                <Image borderRadius="8px" src={el.image} />
+                <Image w="80%" borderRadius="8px" src={el.image} />
               </Box>
             </div>
           );
