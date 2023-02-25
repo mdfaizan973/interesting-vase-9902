@@ -71,7 +71,7 @@ export default function Cakes({ children }) {
         `https://talented-ox-parka.cyclic.app/api/plants?_limit=8&_page=${page}`
       )
       .then((res) => {
-        console.log(res.data);
+        console.log(res);
         setMdata(res.data);
         setLoad(false);
       })
