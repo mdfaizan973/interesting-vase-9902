@@ -6,12 +6,12 @@ export default function Simpleban() {
   return (
     <>
       <div className="smpban">
-        <RouterLink to="/mens_pro">
+        <RouterLink to="/cakes">
           <div className="div1">
             <img src="https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/SBB-Hero-congo-20feb-n.jpg" />
           </div>
         </RouterLink>
-        <RouterLink to="/mens_pro">
+        <RouterLink to="/flowers">
           <div className="div2">
             <img src="https://www.fnp.com/assets/images/custom/new-desk-home/shop-by-cat/SBB-Hero-Anniversary-20feb-n.jpg" />
           </div>
