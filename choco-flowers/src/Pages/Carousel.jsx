@@ -53,6 +53,15 @@ export default function Carousel() {
               width="100%"
               //   height="50%"
               borderRadius="20%"
+              src="https://imgcdn.floweraura.com/cake_homepage_fa_desktop_1.jpg?tr=w-1583,dpr-1.5,q-70"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              width="100%"
+              //   height="50%"
+              borderRadius="20%"
               src="https://imgcdn.floweraura.com/birthday_homepage_fa_desktop_5.jpg?tr=w-1583,dpr-1.5,q-70"
               alt=""
             />
@@ -63,6 +72,15 @@ export default function Carousel() {
               //   height="50%"
               borderRadius="20%"
               src="https://imgcdn.floweraura.com/Final-Home-Page-banner-for-Toothsome-cakes.jpeg?tr=w-1583,dpr-1.5,q-70"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              width="100%"
+              //   height="50%"
+              borderRadius="20%"
+              src="https://imgcdn.floweraura.com/cake_homepage_fa_desktop%20(1).jpg?tr=w-1583,dpr-1.5,q-70"
               alt=""
             />
           </div>

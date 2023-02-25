@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
 import axios from "axios";
+
 import {
   IconButton,
   CloseButton,
@@ -25,6 +26,7 @@ import {
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Allpagesome from "./../ProSideBar/Allpagesome";
 
 export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -180,9 +182,12 @@ export default function Cakes({ children }) {
                 </div>
                 <Image
                   mt="5"
-                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+                  w="100%"
+                  h="30vh"
+                  src="https://scontent.fpat2-1.fna.fbcdn.net/v/t39.30808-6/301915081_628365288921908_6285180264223205675_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=T0Qdjc4-BZAAX-R0Tyd&_nc_ht=scontent.fpat2-1.fna&oh=00_AfD3TL87ekpBCai-Nu9QSjjMPHdKkDRR83STraN7b87goQ&oe=63FDE9B5"
                 />
               </div>
+              <Allpagesome />
             </Box>
           </div>
         )}

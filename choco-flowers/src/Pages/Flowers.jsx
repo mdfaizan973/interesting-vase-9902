@@ -5,6 +5,8 @@ import Footer from "../Components/Footer";
 import FlowerCard from "../ProSideBar/FlowerCard";
 import Loding from "../ProSideBar/Loding";
 import axios from "axios";
+import Allpagesome from "../ProSideBar/Allpagesome";
+
 import {
   IconButton,
   CloseButton,
@@ -180,9 +182,12 @@ export default function Flowers({ children }) {
                 </div>
                 <Image
                   mt="5"
-                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+                  w="100%"
+                  h="30vh"
+                  src="https://www.floraindia.com/media/codazon/slideshow/f/l/flowers_banner.jpg"
                 />
               </div>
+              <Allpagesome />
             </Box>
           </div>
         )}

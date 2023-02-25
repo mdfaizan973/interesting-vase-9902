@@ -25,6 +25,7 @@ import {
 import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Allpagesome from "./../ProSideBar/Allpagesome";
 
 export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -181,9 +182,12 @@ export default function Cakes({ children }) {
                 </div>
                 <Image
                   mt="5"
-                  src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt560de5441247b4fd/63f4e12f2abe1410912a1677/send-birthday-flowers-hero-fy23-V2.jpg?quality=85&auto=webp&optimize={medium}"
+                  w="100%"
+                  h="40vh"
+                  src="https://img.freepik.com/premium-psd/special-chocolate-cake-facebook-cover-web-template-design-premium-psd_567320-138.jpg?w=1060"
                 />
               </div>
+              <Allpagesome />
             </Box>
           </div>
         )}
