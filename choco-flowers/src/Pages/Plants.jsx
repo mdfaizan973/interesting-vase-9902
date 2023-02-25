@@ -27,6 +27,7 @@ import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Allpagesome from "./../ProSideBar/Allpagesome";
+import PlantsCarousal from "../ProSideBar/plantsCarousal";
 
 export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -188,6 +189,7 @@ export default function Cakes({ children }) {
                 />
               </div>
               <Allpagesome />
+              <PlantsCarousal />
             </Box>
           </div>
         )}
