@@ -17,6 +17,7 @@ import UsersAcc from "../Admins/UsersAcc";
 import AddChocoCake from "./../Admins/AddChocoCake";
 import AdminDashboard from "../Admins/AdminDashboard";
 import Cakes from "./../Pages/Cakes";
+import Checkout from "./../Pages/Checkout";
 export default function AllRoutes() {
   return (
     <Routes>
@@ -37,6 +38,7 @@ export default function AllRoutes() {
       <Route path="/admin-dashboard" element={<AdminDashboard />}></Route>
       <Route path="/users_acc" element={<UsersAcc />}></Route>
       <Route path="/cakes" element={<Cakes />}></Route>
+      <Route path="/checkout" element={<Checkout />}></Route>
     </Routes>
   );
 }

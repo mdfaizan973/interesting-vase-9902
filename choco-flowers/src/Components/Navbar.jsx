@@ -10,11 +10,6 @@ import {
   Link,
   Button,
   Menu,
-  MenuButton,
-  MenuList,
-  MenuGroup,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Text,
@@ -23,10 +18,8 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Modal, ModalOverlay, ModalContent } from "@chakra-ui/react";
-import { FaCartPlus, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
-import Signup from "./../Pages/Signup";
 import LoginPop from "./../PopUp/LogInPop";
 
 const NavLink = ({ children }) => (

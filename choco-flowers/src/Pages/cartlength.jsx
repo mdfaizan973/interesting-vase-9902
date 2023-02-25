@@ -18,6 +18,9 @@ const CartContextProvider = ({ children }) => {
     MyCartData();
   }, [cartd]);
 
+  // let cost = cartd.reduce((acc, el) => acc + +el.price, 0);
+  // console.log("my cost is :-", cost);
+
   let totalcart = cartd.length;
   // console.log("cdata", totalcart);
   return (
