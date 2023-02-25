@@ -188,8 +188,8 @@ export default function Cakes({ children }) {
                   src="https://scontent.fpat2-1.fna.fbcdn.net/v/t39.30808-6/301915081_628365288921908_6285180264223205675_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=T0Qdjc4-BZAAX-R0Tyd&_nc_ht=scontent.fpat2-1.fna&oh=00_AfD3TL87ekpBCai-Nu9QSjjMPHdKkDRR83STraN7b87goQ&oe=63FDE9B5"
                 />
               </div>
-              <Allpagesome />
               <PlantsCarousal />
+              <Allpagesome />
             </Box>
           </div>
         )}

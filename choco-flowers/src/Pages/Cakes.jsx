@@ -26,6 +26,7 @@ import { FiHome, FiTrendingUp, FiCompass, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Allpagesome from "./../ProSideBar/Allpagesome";
+import CakeCarousal from "../ProSideBar/CakeCarousal";
 
 export default function Cakes({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -187,6 +188,7 @@ export default function Cakes({ children }) {
                   src="https://img.freepik.com/premium-psd/special-chocolate-cake-facebook-cover-web-template-design-premium-psd_567320-138.jpg?w=1060"
                 />
               </div>
+              <CakeCarousal />
               <Allpagesome />
             </Box>
           </div>
