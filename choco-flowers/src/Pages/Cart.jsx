@@ -24,7 +24,7 @@ import { FaCartPlus } from "react-icons/fa";
 export default function Cart() {
   const [cartData, setCartData] = useState([]);
   const [qties, setQties] = useState(1);
-  const { totalcart, cost } = useContext(CartContext);
+  const { totalcart } = useContext(CartContext);
 
   useEffect(() => {
     MyCartData();
@@ -56,8 +56,8 @@ export default function Cart() {
   //   sum += +cartData[i].price * qty[i];
   // }
 
-  // let cost = cartData.reduce((acc, el) => acc + +el.price, 0);
-  // console.log("my cost is :-", cost);
+  let cost = cartData.reduce((acc, el) => acc + +el.price, 0);
+  console.log("my cost is :-", cost);
   return (
     <div>
       <Navbar />
