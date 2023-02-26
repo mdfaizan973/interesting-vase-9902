@@ -1705,39 +1705,6 @@
   ],
   "cartItems": [
     {
-      "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221118185237/heavenly-butterscotch-cream-cake-half-kg_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221118185238/heavenly-butterscotch-cream-cake-half-kg_2.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221118185238/heavenly-butterscotch-cream-cake-half-kg_4.jpg",
-      "title": "Heavenly Butterscotch Cream Cake- Half Kg",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "599",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:11:15.916Z"
-    },
-    {
-      "name": "Plant",
-      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
-      "title": "Happy Birthday Jade Plant Terrarium",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "699",
-      "rating": "⭐⭐⭐⭐",
-      "id": 33556
-    },
-    {
-      "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_2.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221130174854/butterscotch-cake-half-kg_4.jpg",
-      "title": "Fudge Brownie Cake Half kg",
-      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-      "price": "410",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:14:45.576Z"
-    },
-    {
       "name": "Chocolate Strawberries Choco",
       "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192585x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
       "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
@@ -1747,6 +1714,17 @@
       "price": "469",
       "rating": "⭐⭐⭐⭐",
       "id": 7.147
+    },
+    {
+      "name": "Cake",
+      "image1": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20210701115855/blueberry-designer-cake-half-kg_4.jpg",
+      "title": "Blueberry Designer Cake- Half Kg",
+      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+      "price": "719",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T09:18:46.929Z"
     }
   ],
   "users": [
@@ -1925,6 +1903,16 @@
       "email": "md3522817@gmail.com",
       "password": "1234",
       "id": "X3xTx5x"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "Xx_-OD7"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "8sh0P9R"
     }
   ]
 }

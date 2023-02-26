@@ -42,6 +42,7 @@ export default function AllRoutes() {
       <Route path="/cakes" element={<Cakes />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/loginpop" element={<LogInPop />}></Route>
+      <Route path="/all_pro" element={<AllProducts />}></Route>
     </Routes>
   );
 }
