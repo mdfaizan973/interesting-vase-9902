@@ -23,15 +23,16 @@ import { Link as RouterLink } from "react-router-dom";
 // cityslicka
 export default function LogInPop() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const { login, logout, isAuth } = useContext(AuthContext);
-  console.log(login, logout, isAuth);
+  const [email, setEmail] = useState("md3522817@gmail.com");
+  const [password, setPassword] = useState("1234");
+  const { login, logout, isAuth, handleActivity } = useContext(AuthContext);
+
   const details = {
     email,
     password,
   };
   // https://reqres.in/api/login
+
   const loginSubmit = () => {
     axios
       .post("http://localhost:8010/users", details)
@@ -45,6 +46,9 @@ export default function LogInPop() {
   if (isAuth) {
     return <Navigate to="/" />;
   }
+
+  // const [myData, setMyData] = useState("");
+
   return (
     <div>
       <Flex
@@ -102,16 +106,17 @@ export default function LogInPop() {
                     <Button color={"red.400"}>Home</Button>
                   </RouterLink>
                 </HStack>
-
-                <Button
-                  onClick={loginSubmit}
-                  bg={"blue.400"}
-                  color={"white"}
-                  _hover={{
-                    bg: "blue.500",
-                  }}
-                >
-                  Sign in
+                <Button onClick={handleActivity}>
+                  <Button
+                    onClick={loginSubmit}
+                    bg={"blue.400"}
+                    color={"white"}
+                    _hover={{
+                      bg: "blue.500",
+                    }}
+                  >
+                    Sign in
+                  </Button>
                 </Button>
               </Stack>
             </Stack>
