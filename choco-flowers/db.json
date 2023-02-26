@@ -1694,17 +1694,6 @@
   ],
   "cartItems": [
     {
-      "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20210701115855/blueberry-designer-cake-half-kg_4.jpg",
-      "title": "Blueberry Designer Cake- Half Kg",
-      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-      "price": "719",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:18:46.929Z"
-    },
-    {
       "name": "Flower Rose-Red",
       "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
       "image2": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
@@ -1758,6 +1747,17 @@
       "price": "169",
       "rating": "⭐⭐⭐",
       "id": 2
+    },
+    {
+      "name": "Cake",
+      "image1": "https://www.fnp.com/images/pr/s/v20221130174920/heavenly-vanilla-cream-cake-half-kg_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221130174920/heavenly-vanilla-cream-cake-half-kg_2.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20221130174920/heavenly-vanilla-cream-cake-half-kg_4.jpg",
+      "title": "Heavenly Vanilla Cream Cake- Half Kg",
+      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+      "price": "799",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T09:20:02.056Z"
     }
   ],
   "users": [
