@@ -3,7 +3,7 @@ import { SimpleGrid, Box, Image, Heading, Link } from "@chakra-ui/react";
 export default function MultiPro() {
   return (
     <>
-      <Heading>Special </Heading>
+      <Heading mb={10}>Special </Heading>
       <SimpleGrid
         w="80%"
         m="auto"

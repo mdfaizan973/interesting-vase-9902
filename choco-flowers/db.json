@@ -861,17 +861,6 @@
   ],
   "flowers": [
     {
-      "name": "Flower SunFloer-Pot",
-      "image1": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191167xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191167xlx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "image3": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191167alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "title": "Floral Embrace™",
-      "discription": "Flowers produce gametophytes, which in flowering plants consist of a few haploid cells which produce gametes. The male gametophyte.",
-      "price": "399",
-      "rating": "⭐⭐⭐⭐",
-      "id": 12
-    },
-    {
       "name": "Flower SunFlower-Pot",
       "image1": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191167xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
       "image2": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/191167xlx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
@@ -1705,17 +1694,6 @@
   ],
   "cartItems": [
     {
-      "name": "Chocolate Strawberries Choco",
-      "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192585x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
-      "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "image3": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "title": "Happy Birthday Belgian Chocolate Covered Strawberries",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "469",
-      "rating": "⭐⭐⭐⭐",
-      "id": 7.147
-    },
-    {
       "name": "Cake",
       "image1": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_1.jpg",
       "image2": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_3.jpg",
@@ -1736,6 +1714,50 @@
       "price": "439",
       "rating": "⭐⭐⭐⭐",
       "id": 11
+    },
+    {
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
+      "title": "Happy Birthday Jade Plant Terrarium",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "699",
+      "rating": "⭐⭐⭐⭐",
+      "id": 33556
+    },
+    {
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/l/v20180518064834/beautiful-jade-plant_1.jpg",
+      "image2": "https://i1.fnp.com/images/pr/l/v20211111111758/jade-plant-in-gold-tone-metal-pot_1.jpg",
+      "image3": "https://www.fnp.com/images/pr/l/v20180518064834/beautiful-jade-plant_1.jpg",
+      "title": " Beautiful Jade Plant",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "659",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T08:56:37.388Z"
+    },
+    {
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/s/v20210113104243/green-sansevieria-jada-plant-in-potpori-bowls_3.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20210113104244/green-sansevieria-jada-plant-in-potpori-bowls_5.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20210113104243/green-sansevieria-jada-plant-in-potpori-bowls_3.jpg",
+      "title": "sansevieria & Jada Plant In Potpori Bowls",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "559",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T08:57:50.536Z"
+    },
+    {
+      "name": "Flower Baby-Plant ",
+      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/161834s050218x.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
+      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101199lkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158016mkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "title": "Peace Lily Plant for Sympathy",
+      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
+      "price": "169",
+      "rating": "⭐⭐⭐",
+      "id": 2
     }
   ],
   "users": [

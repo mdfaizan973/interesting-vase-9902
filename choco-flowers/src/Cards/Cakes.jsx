@@ -6,14 +6,14 @@ import { Link as RouterLink } from "react-router-dom";
 export default function Cakes() {
   return (
     <>
-      <Heading as="h1" size="xl" mt={6} mb={2}>
+      <Heading as="h1" size="xl" mt={8} mb={12}>
         Shop Our Best Selling Chocolate Covered Cakes
       </Heading>
       <div className="prople_card">
         <RouterLink to="/cakes">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20221214145641/chocolate-truffle-cream-cake-half-kg_1.jpg" />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               Ethereal Bliss
             </Heading>
           </div>
@@ -22,7 +22,7 @@ export default function Cakes() {
         <RouterLink to="/choco">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20220603122240/assorted-truffles-8-pcs_1.jpg" />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               ChocoLate Bird
             </Heading>
           </div>
@@ -33,7 +33,7 @@ export default function Cakes() {
               src="https://www.fnp.com/images/pr/l/v20221205145048/black-forest-cake-half-kg_1.jpg"
               alt=""
             />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               Butterscotch Cakes
             </Heading>
           </div>
@@ -41,7 +41,7 @@ export default function Cakes() {
         <RouterLink to="/choco">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20200206074634/chocolate-heart-bouquet_1.jpg" />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               Pineapple Cakes
             </Heading>
           </div>
@@ -49,7 +49,7 @@ export default function Cakes() {
         <RouterLink to="/cakes">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20221130121853/butterscotch-cake-half-kg_1.jpg" />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               Flowers N Cakes
             </Heading>
           </div>
@@ -57,7 +57,7 @@ export default function Cakes() {
         <RouterLink to="/choco">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20230105124723/chocolate-delight-love-hamper_1.jpg" />
-            <Heading as="h1" size="sm" mt={6} mb={2}>
+            <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
               Black Forest
             </Heading>
           </div>

@@ -1,4 +1,4 @@
-// import React from "react";
+import React, { useContext } from "react";
 import NorNav from "../Components/NorNav";
 // import { Input, Box, Button } from "@chakra-ui/react";
 // export default function Checkout() {
@@ -34,6 +34,7 @@ import NorNav from "../Components/NorNav";
 //     </div>
 //   );
 // }
+import { CartContext } from "./cartlength";
 import { Link as RouterLink } from "react-router-dom";
 import {
   Container,
@@ -65,11 +66,15 @@ import {
 import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 
 export default function Checkout() {
+  const { cartd, totalcart } = useContext(CartContext);
+  console.log(cartd, totalcart);
+  let cost = cartd.reduce((acc, el) => acc + +el.price, 0);
+  // console.log("my cost is :-", cost);
   return (
     <>
       <NorNav />
       <Container
-        // bg="#9DC4FB"
+        // bg="#9DC4FB"kk
         maxW="full"
         mt={0}
         centerContent
@@ -89,52 +94,34 @@ export default function Checkout() {
                 <WrapItem>
                   <Box w="100%">
                     <Heading>Delivery Information</Heading>
-                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                      FREE Shipping/No Service Charge for Year
-                      <br />
-                      across our brands! Just $29.99/Year
-                    </Text>
-                    <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                      <VStack pl={0} spacing={3} alignItems="flex-start">
-                        <Image
-                          m="10px"
-                          w="25%"
-                          src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltc723326dc66beda5/image-20220307-142252.png"
-                        />
-                        <Image src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltc723326dc66beda5/image-20220307-142252.png" />
-                      </VStack>
-                    </Box>
-                    <HStack
+
+                    <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}></Box>
+                    <VStack>
+                      <Text fontSize="2xl">Total Price :- ₹ {cost}</Text>
+
+                      <Text fontSize="2xl">Total Cart Item :- {totalcart}</Text>
+                    </VStack>
+                    <VStack
                       mt={{ lg: 10, md: 10 }}
                       spacing={5}
                       px={5}
                       alignItems="flex-start"
                     >
-                      <IconButton
-                        aria-label="facebook"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: "#0D74FF" }}
-                        icon={<MdFacebook size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: "#0D74FF" }}
-                        icon={<BsGithub size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="discord"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: "#0D74FF" }}
-                        icon={<BsDiscord size="28px" />}
-                      />
-                    </HStack>
+                      {cartd.map((el) => (
+                        <HStack
+                          key={el.id}
+                          border="1px solid grey"
+                          p="5"
+                          w="100%"
+                        >
+                          <Image w="50px" src={el.image1} />
+                          <box>
+                            <Text>{el.title.substring(0, 20)}..</Text>
+                            <p>₹ {el.price}</p>
+                          </box>
+                        </HStack>
+                      ))}
+                    </VStack>
                   </Box>
                 </WrapItem>
                 <WrapItem>
@@ -150,7 +137,7 @@ export default function Checkout() {
                         <FormControl id="name">
                           <FormLabel>Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" />
+                            <Input type="email" size="md" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
