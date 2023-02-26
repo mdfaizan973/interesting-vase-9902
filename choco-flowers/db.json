@@ -1705,28 +1705,6 @@
   ],
   "cartItems": [
     {
-      "name": "Chocolate Strawberries Choco",
-      "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192585x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
-      "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "image3": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "title": "Happy Birthday Belgian Chocolate Covered Strawberries",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "469",
-      "rating": "⭐⭐⭐⭐",
-      "id": 7.147
-    },
-    {
-      "name": "Flower Baby-Plant ",
-      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/161834s050218x.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101199lkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158016mkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "title": "Peace Lily Plant for Sympathy",
-      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
-      "price": "169",
-      "rating": "⭐⭐⭐",
-      "id": 2
-    },
-    {
       "name": "Cake",
       "image1": "https://www.fnp.com/images/pr/s/v20221118185237/heavenly-butterscotch-cream-cake-half-kg_1.jpg",
       "image2": "https://www.fnp.com/images/pr/s/v20221118185238/heavenly-butterscotch-cream-cake-half-kg_2.jpg",
@@ -1738,48 +1716,37 @@
       "id": "2023-02-24T09:11:15.916Z"
     },
     {
-      "name": "Flower Purple Fl0wer",
-      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image3": "https://images.pexels.com/photos/4272616/pexels-photo-4272616.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "title": "Loving Sentiments™ Lavender & White",
-      "discription": "Flowers produce gametophytes, which in flowering plants consist of a few haploid cells which produce gametes. The male gametophyte.",
-      "price": "239",
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
+      "title": "Happy Birthday Jade Plant Terrarium",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "699",
       "rating": "⭐⭐⭐⭐",
-      "id": 7
-    },
-    {
-      "name": "Flower Peace-Plant ",
-      "image1": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/148687lx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/148687lx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "image3": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/148687alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "title": "Healing Tears™ All White",
-      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
-      "price": "219",
-      "rating": "⭐⭐⭐",
-      "id": 3
+      "id": 33556
     },
     {
       "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/l/v20221214145641/chocolate-truffle-cream-cake-half-kg_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221214202641/chocolate-truffle-cream-cake-half-kg_2.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221214202642/chocolate-truffle-cream-cake-half-kg_5.jpg",
-      "title": "Chocolate Truffle Delicious Cake Half Kg",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "559",
+      "image1": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_2.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20221130174854/butterscotch-cake-half-kg_4.jpg",
+      "title": "Fudge Brownie Cake Half kg",
+      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+      "price": "410",
       "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:10:41.915Z"
+      "id": "2023-02-24T09:14:45.576Z"
     },
     {
-      "name": "Flower Peace-Rose",
-      "image1": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/95379lx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/95379lx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/95379alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "title": "Cherished Memories™ All White",
-      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
-      "price": "179",
-      "rating": "⭐⭐⭐",
-      "id": 4
+      "name": "Chocolate Strawberries Choco",
+      "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192585x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
+      "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "image3": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "title": "Happy Birthday Belgian Chocolate Covered Strawberries",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "469",
+      "rating": "⭐⭐⭐⭐",
+      "id": 7.147
     }
   ],
   "users": [
@@ -1898,6 +1865,66 @@
       "email": "md3522817@gmail.com",
       "password": "1234",
       "id": "87FCWsQ"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T08:29:02.645Z"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "oOPfC-B"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "E3whxgL"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "J5BBtjP"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:10:42.858Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:12:34.792Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:12:42.462Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:13:31.870Z"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "X3xTx5x"
     }
   ]
 }

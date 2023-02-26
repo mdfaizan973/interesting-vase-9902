@@ -47,8 +47,6 @@ export default function LogInPop() {
     return <Navigate to="/" />;
   }
 
-  // const [myData, setMyData] = useState("");
-
   return (
     <div>
       <Flex
@@ -106,17 +104,15 @@ export default function LogInPop() {
                     <Button color={"red.400"}>Home</Button>
                   </RouterLink>
                 </HStack>
-                <Button onClick={handleActivity}>
-                  <Button
-                    onClick={loginSubmit}
-                    bg={"blue.400"}
-                    color={"white"}
-                    _hover={{
-                      bg: "blue.500",
-                    }}
-                  >
-                    Sign in
-                  </Button>
+                <Button
+                  onClick={loginSubmit}
+                  bg={"blue.400"}
+                  color={"white"}
+                  _hover={{
+                    bg: "blue.500",
+                  }}
+                >
+                  Sign in
                 </Button>
               </Stack>
             </Stack>

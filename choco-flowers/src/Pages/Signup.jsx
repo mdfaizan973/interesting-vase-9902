@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NorNav from "../Components/NorNav";
 import { Link as RouterLink } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 import {
   Button,
@@ -46,6 +47,8 @@ export default function Signup() {
       .post("http://localhost:8010/users", newDedails)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
+
+    Navigate("/loginpop");
   };
 
   return (
@@ -70,6 +73,7 @@ export default function Signup() {
                   type="text"
                   value={fname}
                   onChange={(e) => setFname(e.target.value)}
+                  placeholder="First Name.."
                 />
               </Box>
               <Box>
@@ -78,6 +82,7 @@ export default function Signup() {
                   type="text"
                   value={lname}
                   onChange={(e) => setLname(e.target.value)}
+                  placeholder="Last Name.."
                 />
               </Box>
             </HStack>
@@ -87,6 +92,7 @@ export default function Signup() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email.."
               />
             </FormControl>
             <FormControl id="password">
@@ -95,6 +101,7 @@ export default function Signup() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password.."
               />
             </FormControl>
             <FormControl id="phone">
@@ -103,6 +110,7 @@ export default function Signup() {
                 type="number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
+                placeholder="Phone.."
               />
             </FormControl>
 
@@ -171,11 +179,47 @@ export default function Signup() {
           </Stack>
         </Flex>
 
-        <Flex flex={1}>
-          <Image
-            src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt8prodlp/banners/sdd_d_interflora_collections_20221107.jpg"
-            alt="logo"
-          />
+        <Flex flex={1} width="50px" h="50%" mt="120px">
+          <Box>
+            <Image
+              w="75%"
+              borderRadius="50px"
+              mt="60px"
+              boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+              h="50%"
+              src="https://imgcdn.floweraura.com/anniversary_13_0.jpg?tr=w-300,h-300,dpr-1.5,q-70"
+              alt="logo"
+            />
+            <Image
+              w="75%"
+              borderRadius="50px"
+              mt="60px"
+              boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+              h="50%"
+              src="https://imgcdn.floweraura.com/for_him_4_0.jpg?tr=w-300,h-300,dpr-1.5,q-70"
+              alt="logo"
+            />
+          </Box>
+          <Box>
+            <Image
+              w="75%"
+              borderRadius="50px"
+              mt="60px"
+              boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+              h="50%"
+              src="https://imgcdn.floweraura.com/birthday_17_0.jpg?tr=w-300,h-300,dpr-1.5,q-70"
+              alt="logo"
+            />
+            <Image
+              w="75%"
+              borderRadius="50px"
+              mt="60px"
+              boxShadow="rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px"
+              h="50%"
+              src="https://imgcdn.floweraura.com/for_her_1_0.jpg?tr=w-300,h-300,dpr-1.5,q-70"
+              alt="logo"
+            />
+          </Box>
         </Flex>
       </Stack>
     </div>
