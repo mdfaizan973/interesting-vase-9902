@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Image, Input } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { CartContext } from "..//Pages/cartlength";
-
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Flex,
@@ -37,20 +37,16 @@ const NavLink = ({ children }) => (
   </Link>
 );
 export default function Navbar() {
-  const { cartd, totalcart } = useContext(CartContext);
-  // console.log("data", totalcart);
+  const { totalcart } = useContext(CartContext);
 
   const { colorMode, toggleColorMode } = useColorMode();
-  //   const { isOpen, onOpen, onClose } = useDisclosure();
-  //   let navigate = useNavigate();
+  let navigate = useNavigate();
   const handlSearch = (e) => {
-    //     if (e.key === "Enter") {
-    //       let searchResult = e.target.value;
-    //       navigate(`/all_pro/?query=${searchResult}`);
-    //     }
+    if (e.key === "Enter") {
+      let searchResult = e.target.value;
+      navigate(`/all_pro/?query=${searchResult}`);
+    }
   };
-  //   let anser = localStorage.getItem("totalcart") || 0;
-  //   console.log("sdfasjfdsjfksjfksjfkjskdfa:- ", anser);
 
   const OverlayOne = () => (
     <ModalOverlay

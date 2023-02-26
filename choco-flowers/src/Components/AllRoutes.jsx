@@ -18,27 +18,86 @@ import AddChocoCake from "./../Admins/AddChocoCake";
 import AdminDashboard from "../Admins/AdminDashboard";
 import Cakes from "./../Pages/Cakes";
 import Checkout from "./../Pages/Checkout";
+import LogInPop from "../PopUp/LogInPop";
+import PrivateRoutes from "../Context/PrivateRoutes";
 export default function AllRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/all_products" element={<AllProducts />}></Route>
       <Route path="/blog" element={<Blog />}></Route>
-      <Route path="/cart" element={<Cart />}></Route>
-      <Route path="/choco" element={<Choco />}></Route>
+      <Route
+        path="/cart"
+        element={
+          <PrivateRoutes>
+            <Cart />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route
+        path="/choco"
+        element={
+          <PrivateRoutes>
+            <Choco />
+          </PrivateRoutes>
+        }
+      ></Route>
       <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/plants" element={<Plants />}></Route>
-      <Route path="/singleProducts/:id" element={<SingleProducts />}></Route>
-      <Route path="/login" element={<Login />}></Route>
-      <Route path="/flowers" element={<Flowers />}></Route>
-      <Route path="/payments" element={<Payments />}></Route>
+      <Route
+        path="/plants"
+        element={
+          <PrivateRoutes>
+            <Plants />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route
+        path="/singleProducts/:id"
+        element={
+          <PrivateRoutes>
+            <SingleProducts />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route path="/login" element={<LogInPop />}></Route>
+      <Route
+        path="/flowers"
+        element={
+          <PrivateRoutes>
+            <Flowers />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route
+        path="/payments"
+        element={
+          <PrivateRoutes>
+            <Payments />
+          </PrivateRoutes>
+        }
+      ></Route>
       <Route path="*" element={<NotFound />}></Route>
       <Route path="/addFlower" element={<AddFlower />}></Route>
       <Route path="/add_choco/cake" element={<AddChocoCake />}></Route>
       <Route path="/admin-dashboard" element={<AdminDashboard />}></Route>
       <Route path="/users_acc" element={<UsersAcc />}></Route>
-      <Route path="/cakes" element={<Cakes />}></Route>
-      <Route path="/checkout" element={<Checkout />}></Route>
+      <Route
+        path="/cakes"
+        element={
+          <PrivateRoutes>
+            <Cakes />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route
+        path="/checkout"
+        element={
+          <PrivateRoutes>
+            <Checkout />
+          </PrivateRoutes>
+        }
+      ></Route>
+      <Route path="/loginpop" element={<LogInPop />}></Route>
     </Routes>
   );
 }
