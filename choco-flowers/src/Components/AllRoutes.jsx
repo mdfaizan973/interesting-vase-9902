@@ -20,6 +20,7 @@ import Cakes from "./../Pages/Cakes";
 import Checkout from "./../Pages/Checkout";
 import LogInPop from "../PopUp/LogInPop";
 import PrivateRoutes from "../Context/PrivateRoutes";
+import Delhivery from "../Pages/Delhivery";
 export default function AllRoutes() {
   return (
     <Routes>
@@ -43,6 +44,7 @@ export default function AllRoutes() {
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/loginpop" element={<LogInPop />}></Route>
       <Route path="/all_pro" element={<AllProducts />}></Route>
+      <Route path="/delhivery" element={<Delhivery />}></Route>
     </Routes>
   );
 }

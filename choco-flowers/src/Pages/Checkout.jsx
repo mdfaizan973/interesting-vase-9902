@@ -5,7 +5,7 @@ export default function Checkout() {
   return (
     <div>
       <NorNav />
-      <Box w="50% " mt={10} m={"auto"}>
+      <Box w="50% " m={"25px auto"}>
         <Input />
         <Input />
         <Input />
