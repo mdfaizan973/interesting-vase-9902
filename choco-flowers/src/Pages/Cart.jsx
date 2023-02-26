@@ -15,10 +15,8 @@ import {
   Button,
   Image,
   Heading,
-  VStack,
   HStack,
   Text,
-  Center,
 } from "@chakra-ui/react";
 import { FaCartPlus } from "react-icons/fa";
 export default function Cart() {

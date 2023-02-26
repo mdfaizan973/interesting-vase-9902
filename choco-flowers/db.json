@@ -1705,37 +1705,214 @@
   ],
   "cartItems": [
     {
-      "name": "Plant",
-      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
-      "title": "Happy Birthday Jade Plant Terrarium",
+      "name": "Chocolate Strawberries Choco",
+      "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192585x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
+      "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "image3": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192558mx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+      "title": "Happy Birthday Belgian Chocolate Covered Strawberries",
       "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "699",
+      "price": "469",
       "rating": "⭐⭐⭐⭐",
-      "id": 33556
+      "id": 7.147
     },
     {
       "name": "Cake",
-      "image1": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_2.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20221130174853/butterscotch-cake-half-kg_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20221130174854/butterscotch-cake-half-kg_4.jpg",
-      "title": "Fudge Brownie Cake Half kg",
+      "image1": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221118185114/blueberry-designer-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20210701115855/blueberry-designer-cake-half-kg_4.jpg",
+      "title": "Blueberry Designer Cake- Half Kg",
       "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
-      "price": "410",
+      "price": "719",
       "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T09:14:45.576Z"
+      "id": "2023-02-24T09:18:46.929Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "lname": "Faizan",
+      "fname": "Md",
+      "phone": "56465445653465",
+      "id": "2023-02-26T06:12:46.982Z"
     },
     {
-      "name": "Flower Baby-Plant ",
-      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/161834s050218x.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101199lkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158016mkx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
-      "title": "Peace Lily Plant for Sympathy",
-      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
-      "price": "169",
-      "rating": "⭐⭐⭐",
-      "id": 2
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": "lJorHr2"
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": "u_w-cXH"
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": "UbqNhSk"
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": "hU_qfuH"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "j1oKa7x"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "ZRGUEYY"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "kK4sGA6"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "Rm9oPzL"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "mxVsdQb"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "Z88hUv-"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "z5MxcLJ"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "6EPhYGy"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "aKHuXCX"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "vFp3ZEI"
+    },
+    {
+      "email": "jin@gmail.com",
+      "password": "1478",
+      "lname": "Jhon",
+      "fname": "Jin",
+      "phone": "1366545666",
+      "id": "2023-02-26T06:59:04.993Z"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "Igh1Dmr"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "n9VkOwu"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "tzoXG5b"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "kNARxFu"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "5ciM9FF"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "87FCWsQ"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T08:29:02.645Z"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "oOPfC-B"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "E3whxgL"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "J5BBtjP"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:10:42.858Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:12:34.792Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:12:42.462Z"
+    },
+    {
+      "email": "",
+      "password": "",
+      "lname": "",
+      "fname": "",
+      "phone": "",
+      "id": "2023-02-26T09:13:31.870Z"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "X3xTx5x"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "Xx_-OD7"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "8sh0P9R"
     }
   ]
 }

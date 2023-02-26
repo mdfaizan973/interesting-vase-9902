@@ -18,6 +18,8 @@ import AddChocoCake from "./../Admins/AddChocoCake";
 import AdminDashboard from "../Admins/AdminDashboard";
 import Cakes from "./../Pages/Cakes";
 import Checkout from "./../Pages/Checkout";
+import LogInPop from "../PopUp/LogInPop";
+import PrivateRoutes from "../Context/PrivateRoutes";
 export default function AllRoutes() {
   return (
     <Routes>
@@ -29,7 +31,7 @@ export default function AllRoutes() {
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/plants" element={<Plants />}></Route>
       <Route path="/singleProducts/:id" element={<SingleProducts />}></Route>
-      <Route path="/login" element={<Login />}></Route>
+      <Route path="/login" element={<LogInPop />}></Route>
       <Route path="/flowers" element={<Flowers />}></Route>
       <Route path="/payments" element={<Payments />}></Route>
       <Route path="*" element={<NotFound />}></Route>
@@ -39,6 +41,8 @@ export default function AllRoutes() {
       <Route path="/users_acc" element={<UsersAcc />}></Route>
       <Route path="/cakes" element={<Cakes />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
+      <Route path="/loginpop" element={<LogInPop />}></Route>
+      <Route path="/all_pro" element={<AllProducts />}></Route>
     </Routes>
   );
 }

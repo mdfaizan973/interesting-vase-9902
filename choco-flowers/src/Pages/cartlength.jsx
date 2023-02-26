@@ -9,7 +9,7 @@ const CartContextProvider = ({ children }) => {
     axios
       .get("http://localhost:8010/cartItems")
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setCartd(res.data);
       })
       .catch((err) => console.log(err));
