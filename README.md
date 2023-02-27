@@ -7,7 +7,15 @@ This is the clone of 1800Flowers.com that , I did during my construct week at ma
 The website name is sweets flower from where user can buy flowers , chocolates, cakes and plants.
 
 # Fully Responsive..
+
 # Tech Stack :-
+Html,
+Css,
+Js,
+React,{Axios, Router,
+Chakara UI
+
+# Functiontaliies..
 Carousal,
 
 sorting,
