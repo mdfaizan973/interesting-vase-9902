@@ -4,6 +4,7 @@
 
 # Discription :- 
 This is the clone of 1800Flowers.com that , I did during my construct week at masai school.
+The website name is sweets flower from where user can buy flowers , chocolates, cakes and plants.
 
 # Fully Responsive..
 # Tech Stack :-
