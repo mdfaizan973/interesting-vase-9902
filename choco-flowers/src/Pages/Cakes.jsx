@@ -36,7 +36,7 @@ export default function Cakes({ children }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [page, setPage] = useState(1);
   const [load, setLoad] = useState(false);
-  // let searchResult = searchParams.get("query");
+  let searchResult = searchParams.get("query");
   // console.log(searchResult);
   // useEffect(() => {
   //   getData(page);

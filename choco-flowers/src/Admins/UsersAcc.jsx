@@ -129,13 +129,13 @@ const SidebarContent = ({ onClose, ...rest }) => {
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Sweets
       </NavItem>
-      <RouterLink to="/add_choco/cake">
+      <RouterLink to="/add_choco">
         <NavItem key="faizan" icon={FiCompass}>
           Chocolates
           <SmallAddIcon />
         </NavItem>
       </RouterLink>
-      <RouterLink to="/add_choco/cake">
+      <RouterLink to="/add_choco">
         <NavItem key="faizan" icon={FiCompass}>
           Cakes
           <SmallAddIcon />

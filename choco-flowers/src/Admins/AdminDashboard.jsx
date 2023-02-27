@@ -17,6 +17,7 @@ import {
   useColorModeValue,
   Link,
   Drawer,
+  Image,
   Button,
   DrawerContent,
   Text,
@@ -78,9 +79,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
-        </Text>
+        <Image
+          w="80%"
+          src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
+        />
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       <RouterLink to="/admin-dashboard">
@@ -128,13 +130,13 @@ const SidebarContent = ({ onClose, ...rest }) => {
       <NavItem fontSize={"20px"} key="faizan" icon={FiTrendingUp}>
         Sweets
       </NavItem>
-      <RouterLink to="/add_choco/cake">
+      <RouterLink to="/add_choco">
         <NavItem key="faizan" icon={FiCompass}>
           Chocolates
           <SmallAddIcon />
         </NavItem>
       </RouterLink>
-      <RouterLink to="/add_choco/cake">
+      <RouterLink to="/add_choco">
         <NavItem key="faizan" icon={FiCompass}>
           Cakes
           <SmallAddIcon />

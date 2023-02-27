@@ -950,17 +950,6 @@
     },
     {
       "name": "Flower Rose White",
-      "image1": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/140953mbhv1wc2x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
-      "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/140953alt_view2c.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
-      "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/85602_hg_w2_windchime_purple_gemc.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
-      "title": "Ocean Breeze Orchids",
-      "discription": "Self-pollination happens in flowers where the stamen and carpel mature at the same time, and are positioned so that the pollen can land on the flower's stigma. This pollination does not require an investment from the plant to provide nectar and pollen as food for pollinators.[1]",
-      "price": "299",
-      "rating": "⭐⭐⭐⭐",
-      "id": 21
-    },
-    {
-      "name": "Flower Rose White",
       "image1": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101980lycspx.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
       "image2": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/rosealt_viewc.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
       "image3": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/101980alt_view1c.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
@@ -1694,39 +1683,6 @@
   ],
   "cartItems": [
     {
-      "name": "Flower Rose-Red",
-      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
-      "image2": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "image3": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191112xlx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
-      "title": "Fields of Europe® Romance",
-      "discription": "Flowers produce gametophytes, which in flowering plants consist of a few haploid cells which produce gametes. The male gametophyte.",
-      "price": "439",
-      "rating": "⭐⭐⭐⭐",
-      "id": 11
-    },
-    {
-      "name": "Plant",
-      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
-      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
-      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
-      "title": "Happy Birthday Jade Plant Terrarium",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "699",
-      "rating": "⭐⭐⭐⭐",
-      "id": 33556
-    },
-    {
-      "name": "Plant",
-      "image1": "https://www.fnp.com/images/pr/l/v20180518064834/beautiful-jade-plant_1.jpg",
-      "image2": "https://i1.fnp.com/images/pr/l/v20211111111758/jade-plant-in-gold-tone-metal-pot_1.jpg",
-      "image3": "https://www.fnp.com/images/pr/l/v20180518064834/beautiful-jade-plant_1.jpg",
-      "title": " Beautiful Jade Plant",
-      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
-      "price": "659",
-      "rating": "⭐⭐⭐⭐",
-      "id": "2023-02-24T08:56:37.388Z"
-    },
-    {
       "name": "Plant",
       "image1": "https://www.fnp.com/images/pr/s/v20210113104243/green-sansevieria-jada-plant-in-potpori-bowls_3.jpg",
       "image2": "https://www.fnp.com/images/pr/s/v20210113104244/green-sansevieria-jada-plant-in-potpori-bowls_5.jpg",
@@ -1758,6 +1714,50 @@
       "price": "799",
       "rating": "⭐⭐⭐⭐",
       "id": "2023-02-24T09:20:02.056Z"
+    },
+    {
+      "name": "Flower White Port",
+      "image1": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191165xlx.jpg?width=406&height=445quality=60&auto=webp&optimize={medium}",
+      "image2": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191165xlx.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
+      "image3": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191165alt_viewc.jpg?width=100&height=110&quality=70&auto=webp&optimize={medium}",
+      "title": "Classic All White Arrangement™ for Sympathy",
+      "discription": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae).",
+      "price": "196",
+      "rating": "⭐⭐⭐",
+      "id": 10
+    },
+    {
+      "name": "Chocolate Smilye Choco",
+      "image1": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192568lx.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}",
+      "image2": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192546lx.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
+      "image3": "https://cdn4.fruitbouquets.com/wcsstore/Flowers/images/catalog/192546alt_viewc.jpg?width=100&height=110&quality=90&auto=webp&optimize={medium}",
+      "title": "Strawberry Smiles® Dipped Strawberries",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "269",
+      "rating": "⭐⭐⭐⭐",
+      "id": 5.147
+    },
+    {
+      "name": "Cake",
+      "image1": "https://www.fnp.com/images/pr/s/v20221205202048/black-forest-cake-half-kg_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20221205202051/black-forest-cake-half-kg_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20221205202052/black-forest-cake-half-kg_5.jpg",
+      "title": "Black Forest Cake Half kg",
+      "discription": "Every cake we offer is handcrafted and since each chef has his/her own way of baking and designing a cake, there might be slight variation in the product in terms of design and shape. The chosen delivery time is an estimate and depends on the availability of the product and the destination to which you want the product to be delivered.",
+      "price": "699",
+      "rating": "⭐⭐⭐⭐",
+      "id": "2023-02-24T09:11:54.361Z"
+    },
+    {
+      "name": "Plant",
+      "image1": "https://www.fnp.com/images/pr/l/v20211109104103/happy-birthday-jade-plant-terrarium_1.jpg",
+      "image2": "https://www.fnp.com/images/pr/s/v20211109161105/happy-birthday-jade-plant-terrarium_3.jpg",
+      "image3": "https://www.fnp.com/images/pr/s/v20211109161108/happy-birthday-jade-plant-terrarium_5.jpg",
+      "title": "Happy Birthday Jade Plant Terrarium",
+      "discription": "You don’t need to be a connoisseur to appreciate these gourmet treats. Fresh, juicy strawberries are dipped and drizzled to perfection. It’s a decadent gift artfully presented that will add to every celebration.",
+      "price": "699",
+      "rating": "⭐⭐⭐⭐",
+      "id": 33556
     }
   ],
   "users": [
@@ -1946,6 +1946,21 @@
       "email": "md3522817@gmail.com",
       "password": "1234",
       "id": "8sh0P9R"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "Wos9D_3"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "HX_2hdA"
+    },
+    {
+      "email": "md3522817@gmail.com",
+      "password": "1234",
+      "id": "ZTsM-Cm"
     }
   ]
 }

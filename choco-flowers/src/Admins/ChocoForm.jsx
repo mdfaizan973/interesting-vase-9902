@@ -18,7 +18,6 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-
 export default function ChocoForm() {
   return (
     <div>

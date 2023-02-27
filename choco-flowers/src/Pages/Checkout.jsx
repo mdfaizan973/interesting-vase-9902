@@ -67,6 +67,7 @@ import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 
 export default function Checkout() {
   const { cartd, totalcart } = useContext(CartContext);
+
   console.log(cartd, totalcart);
   let cost = cartd.reduce((acc, el) => acc + +el.price, 0);
   // console.log("my cost is :-", cost);
@@ -85,7 +86,8 @@ export default function Checkout() {
             // bg="purple.700"
             // color="white"
             borderRadius="lg"
-            border="1px solid grey"
+            // border="1px solid grey"
+            boxShadow="rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
             m={{ sm: 4, md: 16, lg: 10 }}
             p={{ sm: 5, md: 5, lg: 16 }}
           >
@@ -110,13 +112,18 @@ export default function Checkout() {
                       {cartd.map((el) => (
                         <HStack
                           key={el.id}
-                          border="1px solid grey"
+                          // border="1px solid grey"
                           p="5"
                           w="100%"
+                          // boxShadow="rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"
+                          boxShadow="rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
                         >
-                          <Image w="50px" src={el.image1} />
+                          <Image w="60px" src={el.image1} />
                           <box>
-                            <Text>{el.title.substring(0, 20)}..</Text>
+                            <Text color="green" fontSize="xl">
+                              {el.title.substring(0, 20)}..
+                            </Text>
+                            <Text>{el.name}</Text>
                             <p>₹ {el.price}</p>
                           </box>
                         </HStack>
@@ -125,37 +132,50 @@ export default function Checkout() {
                   </Box>
                 </WrapItem>
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg" w="80vh">
+                  <Box
+                    bg="white"
+                    borderRadius="lg"
+                    w="80vh"
+                    boxShadow="rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
+                  >
                     <Box m={8} color="#0B0E3F" w="80%">
                       <VStack spacing={5}>
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" />
+                            <Input type="text" size="md" placeholder="Name" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="email" size="md" />
+                            <Input type="email" placeholder="Email" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Phone</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" />
+                            <Input type="text" size="md" placeholder="Phone" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Address</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" />
+                            <Input
+                              type="text"
+                              size="md"
+                              placeholder="Address"
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Pin-Code</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" />
+                            <Input
+                              type="text"
+                              size="md"
+                              placeholder="Pin-Code"
+                            />
                           </InputGroup>
                         </FormControl>
 
