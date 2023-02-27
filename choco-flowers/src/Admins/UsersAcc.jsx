@@ -10,6 +10,7 @@ import {
   Avatar,
   Box,
   CloseButton,
+  Image,
   Flex,
   HStack,
   VStack,
@@ -79,9 +80,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
-        </Text>
+        <Image
+          w="80%"
+          src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
+        />
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       <RouterLink to="/admin-dashboard">
