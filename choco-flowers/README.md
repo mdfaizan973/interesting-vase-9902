@@ -1,4 +1,9 @@
 # Name :- Md Faizan from Fw22 Batch at masai school. Student Code :- fw22_0210
+
+# Discription :- 
+This is the clone of 1800Flowers.com that , I did during my construct week at masai school.
+
+# Fully Responsive..
 # Tech Stack :-
 Carousal,
 
