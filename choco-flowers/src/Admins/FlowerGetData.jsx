@@ -20,6 +20,7 @@ export default function FlowerGetData({
   id,
   name,
   price,
+  rating,
   fdata,
   discription,
 }) {
@@ -36,23 +37,22 @@ export default function FlowerGetData({
   useEffect(() => {
     deleteHandle();
   }, [fdata]);
-
+  let x = Math.floor(Math.random() * 5 + 1);
   return (
     <div>
       <TableContainer>
         <Table
-          marginLeft="330px"
+          // marginLeft="330px"
           width="100%"
           variant="striped"
           colorScheme="teal"
         >
-          <TableCaption>Imperial to metric conversion factors</TableCaption>
           <Thead>
             <Tr>
               <Th>Title</Th>
               <Th>Image-1</Th>
               <Th>Category</Th>
-              <Th>Brand</Th>
+              <Th>Ratng</Th>
               <Th isNumeric>Price</Th>
 
               <Th>Delete</Th>
@@ -60,13 +60,12 @@ export default function FlowerGetData({
           </Thead>
           <Tbody>
             <Tr key={id}>
-              <Td> {title}</Td>
+              <Td> {title.substring(0, 16)}</Td>
               <Td>
                 <img width={"105"} src={image1} alt={title} />
               </Td>
               <Td> {name} </Td>
-              <Td>fds</Td>
-
+              <Td>⭐ {x} </Td>
               <Td isNumeric>₹ {price} </Td>
               <Td>
                 <button onClick={() => deleteHandle(id)}>

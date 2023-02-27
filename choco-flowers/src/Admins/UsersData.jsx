@@ -40,11 +40,11 @@ export default function UsersData() {
           boxShadow={"4xl"}
           borderRadius="15px"
         >
-          Md Faizan
+          Roman D
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Email:-faizan@gmail.com"}
-            text={"Password:-faizan@3344"}
+            title={"Email:-roman@gmail.com"}
+            text={"Password:-rom2m@88"}
           />
         </Box>
 
@@ -53,11 +53,11 @@ export default function UsersData() {
           boxShadow={"4xl"}
           borderRadius="15px"
         >
-          Md Faizan
+          Naruto
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Email:-faizan@gmail.com"}
-            text={"Password:-faizan@3344"}
+            title={"Email:-narito22@gmail.com"}
+            text={"Password:-narito22@3454"}
           />
         </Box>
         <Box
@@ -65,11 +65,11 @@ export default function UsersData() {
           boxShadow={"4xl"}
           borderRadius="15px"
         >
-          Md Faizan
+          Messi
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            title={"Email:-faizan@gmail.com"}
-            text={"Password:-faizan@3344"}
+            title={"Email:-Messi@gmail.com"}
+            text={"Password:-alpha3344"}
           />
         </Box>
         <Box
@@ -77,11 +77,59 @@ export default function UsersData() {
           boxShadow={"4xl"}
           borderRadius="15px"
         >
-          Md Faizan
+          Virs team
+          <Feature
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            title={"Email:-team@gmail.com"}
+            text={"Password:-t12@5896"}
+          />
+        </Box>
+        <Box
+          bg={useColorModeValue("white", "gray.800")}
+          boxShadow={"4xl"}
+          borderRadius="15px"
+        >
+          Ronaldo 2
+          <Feature
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            title={"Email:-ron@gmail.com"}
+            text={"Password:-ronch12369"}
+          />
+        </Box>
+        <Box
+          bg={useColorModeValue("white", "gray.800")}
+          boxShadow={"4xl"}
+          borderRadius="15px"
+        >
+          Jhon Dio
+          <Feature
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            title={"Email:-jhons@gmail.com"}
+            text={"Password:-jhon@30044"}
+          />
+        </Box>
+        <Box
+          bg={useColorModeValue("white", "gray.800")}
+          boxShadow={"4xl"}
+          borderRadius="15px"
+        >
+          Faizan
           <Feature
             icon={<Icon as={FcAssistant} w={10} h={10} />}
             title={"Email:-faizan@gmail.com"}
-            text={"Password:-faizan@3344"}
+            text={"Password:-fzs@3044"}
+          />
+        </Box>
+        <Box
+          bg={useColorModeValue("white", "gray.800")}
+          boxShadow={"4xl"}
+          borderRadius="15px"
+        >
+          Danish
+          <Feature
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            title={"Email:-Dans@gmail.com"}
+            text={"Password:-jd@123694"}
           />
         </Box>
       </SimpleGrid>

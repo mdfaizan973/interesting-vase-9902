@@ -103,6 +103,9 @@ export default function LogInPop() {
                   <RouterLink to="/">
                     <Button color={"red.400"}>Home</Button>
                   </RouterLink>
+                  <RouterLink to="/admin-dashboard">
+                    <Button color={"green.400"}>Admin</Button>
+                  </RouterLink>
                 </HStack>
                 <Button
                   onClick={loginSubmit}
