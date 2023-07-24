@@ -73,9 +73,9 @@ export default function NorNav() {
         />
 
         <Stack direction={"row"} spacing={6}>
-          <RouterLink to="/home">
+          {/* <RouterLink to="/home">
             <Button>Home</Button>
-          </RouterLink>
+          </RouterLink> */}
           <Button onClick={toggleColorMode} width="20px">
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>
