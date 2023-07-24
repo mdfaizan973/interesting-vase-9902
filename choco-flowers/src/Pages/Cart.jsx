@@ -18,11 +18,13 @@ import {
   HStack,
   Text,
 } from "@chakra-ui/react";
-import { FaCartPlus } from "react-icons/fa";
+import { useToast } from "@chakra-ui/react";
+
 export default function Cart() {
   const [cartData, setCartData] = useState([]);
   const [qties, setQties] = useState(1);
   const { totalcart } = useContext(CartContext);
+  const toast = useToast();
 
   useEffect(() => {
     MyCartData();
@@ -30,7 +32,7 @@ export default function Cart() {
   let arr;
   const MyCartData = () => {
     axios
-      .get("http://localhost:8010/cartItems")
+      .get("https://flowers-wdds.onrender.com/cartItems")
       .then((res) => {
         // console.log(res);
         setCartData(res.data);
@@ -40,8 +42,16 @@ export default function Cart() {
 
   const deletecartItem = (id) => {
     axios
-      .delete(`http://localhost:8010/cartItems/${id}`)
-      .then((res) => console.log(res))
+      .delete(`https://flowers-wdds.onrender.com/cartItems/${id}`)
+      .then((res) => {
+        // console.log(res);
+
+        toast({
+          title: "Item deleted successfully",
+          position: ["top"],
+          isClosable: true,
+        });
+      })
       .catch((err) => console.log(err));
   };
 
@@ -55,7 +65,7 @@ export default function Cart() {
   // }
 
   let cost = cartData.reduce((acc, el) => acc + +el.price, 0);
-  console.log("my cost is :-", cost);
+  // console.log("my cost is :-", cost);
   return (
     <div>
       <Navbar />

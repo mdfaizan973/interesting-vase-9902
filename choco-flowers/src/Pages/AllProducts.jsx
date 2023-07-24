@@ -41,9 +41,7 @@ export default function AllProducts({ children }) {
   }, [searchParams, page]);
   const getData = (page) => {
     axios
-      .get(
-        `https://talented-ox-parka.cyclic.app/api/all-pro?_limit=8&_page=${page}`
-      )
+      .get(`https://flowers-wdds.onrender.com/all-pro?_limit=8&_page=${page}`)
       .then((res) => {
         let data = res.data;
         if (searchResult) {

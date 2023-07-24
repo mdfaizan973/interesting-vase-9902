@@ -23,13 +23,15 @@ import {
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { SiLinkedin, SiMessenger } from "react-icons/si";
-// http://localhost:8010/users
+import { useToast, WrapItem, Wrap } from "@chakra-ui/react";
+
 export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [phone, setPhone] = useState("");
+  const toast = useToast();
 
   const newDedails = {
     email,
@@ -41,14 +43,31 @@ export default function Signup() {
   };
 
   const handleSubmitUser = () => {
-    // console.log("SubmitUser-data", email, password, fname, fname, phone);
-
-    axios
-      .post("http://localhost:8010/users", newDedails)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-
-    Navigate("/loginpop");
+    if (
+      email === "" ||
+      password === "" ||
+      fname === "" ||
+      lname === "" ||
+      phone === ""
+    ) {
+      toast({
+        title: "Please fill all fields",
+        position: ["top"],
+        isClosable: true,
+      });
+    } else {
+      axios
+        .post("https://flowers-wdds.onrender.com/users", newDedails)
+        .then((res) => {
+          console.log(res);
+          toast({
+            title: "You are successfully registered",
+            position: ["top"],
+            isClosable: true,
+          });
+        })
+        .catch((err) => console.log(err));
+    }
   };
 
   return (

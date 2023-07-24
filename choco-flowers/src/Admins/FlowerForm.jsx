@@ -120,7 +120,7 @@ function FadeEx() {
   const [floData, setFlowData] = useState([]);
   const getData = () => {
     axios
-      .get("http://localhost:8010/flowers")
+      .get("https://flowers-wdds.onrender.com/flowers")
       .then((res) => {
         console.log(res.data);
 

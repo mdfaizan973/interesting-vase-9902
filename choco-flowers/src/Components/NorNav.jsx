@@ -73,19 +73,16 @@ export default function NorNav() {
         />
 
         <Stack direction={"row"} spacing={6}>
-          <RouterLink to="/">
+          <RouterLink to="/home">
             <Button>Home</Button>
           </RouterLink>
           <Button onClick={toggleColorMode} width="20px">
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>{" "}
-          <Button
-            onClick={() => {
-              setOverlay(<OverlayOne />);
-              onOpen();
-            }}
-          >
-            <FaUser />
+          </Button>
+          <Button>
+            <RouterLink to="/">
+              <FaUser />
+            </RouterLink>
           </Button>
         </Stack>
       </Container>

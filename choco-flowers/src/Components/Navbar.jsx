@@ -67,7 +67,7 @@ export default function Navbar() {
         style={{ zIndex: 1 }}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <RouterLink to="/">
+          <RouterLink to="/home">
             <Box>
               <Image
                 src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
@@ -111,13 +111,10 @@ export default function Navbar() {
                     />
                   </Center>
                 </RouterLink>
-                <Button
-                  onClick={() => {
-                    setOverlay(<OverlayOne />);
-                    onOpen();
-                  }}
-                >
-                  <FaUser />
+                <Button>
+                  <RouterLink to="/">
+                    <FaUser />
+                  </RouterLink>
                 </Button>
               </Menu>
             </Stack>
@@ -133,23 +130,3 @@ export default function Navbar() {
     </div>
   );
 }
-// <MenuList alignItems={"center"}>
-//   <br />
-
-//   <Center>
-//     <Avatar
-//       size={"2xl"}
-//       src={"https://cdn-icons-png.flaticon.com/512/21/21104.png"}
-//     />
-//   </Center>
-
-//   <br />
-//   <Center>{/*  <p>Md Faizan</p> */}</Center>
-//   <br />
-//   <MenuDivider />
-//   <RouterLink to="/signup">
-//     <MenuItem>New Account</MenuItem>
-//   </RouterLink>
-//   <MenuItem>LogIn</MenuItem>
-//   <MenuItem>Logout</MenuItem>
-// </MenuList>;
