@@ -140,7 +140,7 @@ export default function Signup() {
                 justify={"space-between"}
               >
                 <Checkbox>Remember me</Checkbox>
-                <RouterLink to="/login">
+                <RouterLink to="/">
                   <Link color={"blue.500"}> LogIn</Link>
                 </RouterLink>
               </Stack>

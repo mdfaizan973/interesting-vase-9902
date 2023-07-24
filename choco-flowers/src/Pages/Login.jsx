@@ -60,7 +60,7 @@ export default function Login() {
               isClosable: true,
             });
             let st = setTimeout(() => {
-              window.location.href = "/";
+              window.location.href = "/home";
               return () => st;
             }, 1000);
           } else {
