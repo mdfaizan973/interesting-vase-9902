@@ -87,13 +87,11 @@ export default function Cart() {
                 padding: "5px",
                 borderRadius: "15px",
                 marginTop: "5px",
-                // boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-                boxShadow:
-                  "rgb(204, 219, 232) 3px 3px 6px 6px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset",
+                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
             >
               <Container>
-                <Image w="60%" src={item.image1} />
+                <Image borderRadius={"10px"} w="60%" src={item.image1} />
               </Container>
               <Container>
                 <Heading color="green" fontSize="2xl">
@@ -131,9 +129,9 @@ export default function Cart() {
 
         <Container>
           <Box
-            padding="15px"
-            boxShadow="rgb(204, 219, 232) 3px 3px 6px 2px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
-            // boxShadow="rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset"
+            borderRadius={"10px"}
+            padding="18px"
+            boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
           >
             <Heading>Cart Summary</Heading>
             <Text>Grand Total</Text>

@@ -69,7 +69,7 @@ export default function NorNav() {
       >
         <Image
           w="10%"
-          src="https://sweetflower.com/wp-content/uploads/2022/11/SF-PrimaryLogo-RGB-01-transparent-300x151.png"
+          src="https://images.prismic.io/sweetflower/dd7deb05-bf6b-4436-9dd6-3594029907f5_SFLogo-New.png?auto=compress%2Cformat&fit=max&w=1920"
         />
 
         <Stack direction={"row"} spacing={6}>
