@@ -139,7 +139,7 @@ export default function Cart() {
             <Text fontSize="2xl"> Total Rs. {cost}</Text>
             <Text fontSize="2xl"> Total Cart Item - {totalcart}</Text>
             <Text fontSize="xl" textDecoration="line-through">
-              Total Disc - {cost * 1.7}
+              Total Disc : {cost * 1.7}
             </Text>
             <br />
             <Text>
