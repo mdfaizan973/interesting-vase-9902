@@ -18,11 +18,13 @@ import {
   HStack,
   Text,
 } from "@chakra-ui/react";
-import { FaCartPlus } from "react-icons/fa";
+import { useToast } from "@chakra-ui/react";
+
 export default function Cart() {
   const [cartData, setCartData] = useState([]);
   const [qties, setQties] = useState(1);
   const { totalcart } = useContext(CartContext);
+  const toast = useToast();
 
   useEffect(() => {
     MyCartData();
@@ -30,7 +32,7 @@ export default function Cart() {
   let arr;
   const MyCartData = () => {
     axios
-      .get("http://localhost:8010/cartItems")
+      .get("https://flowers-wdds.onrender.com/cartItems")
       .then((res) => {
         // console.log(res);
         setCartData(res.data);
@@ -40,8 +42,16 @@ export default function Cart() {
 
   const deletecartItem = (id) => {
     axios
-      .delete(`http://localhost:8010/cartItems/${id}`)
-      .then((res) => console.log(res))
+      .delete(`https://flowers-wdds.onrender.com/cartItems/${id}`)
+      .then((res) => {
+        // console.log(res);
+
+        toast({
+          title: "Item deleted successfully",
+          position: ["top"],
+          isClosable: true,
+        });
+      })
       .catch((err) => console.log(err));
   };
 
@@ -55,7 +65,7 @@ export default function Cart() {
   // }
 
   let cost = cartData.reduce((acc, el) => acc + +el.price, 0);
-  console.log("my cost is :-", cost);
+  // console.log("my cost is :-", cost);
   return (
     <div>
       <Navbar />
@@ -77,13 +87,11 @@ export default function Cart() {
                 padding: "5px",
                 borderRadius: "15px",
                 marginTop: "5px",
-                // boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-                boxShadow:
-                  "rgb(204, 219, 232) 3px 3px 6px 6px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset",
+                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
             >
               <Container>
-                <Image w="60%" src={item.image1} />
+                <Image borderRadius={"10px"} w="60%" src={item.image1} />
               </Container>
               <Container>
                 <Heading color="green" fontSize="2xl">
@@ -121,9 +129,9 @@ export default function Cart() {
 
         <Container>
           <Box
-            padding="15px"
-            boxShadow="rgb(204, 219, 232) 3px 3px 6px 2px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
-            // boxShadow="rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset"
+            borderRadius={"10px"}
+            padding="18px"
+            boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
           >
             <Heading>Cart Summary</Heading>
             <Text>Grand Total</Text>
@@ -131,7 +139,7 @@ export default function Cart() {
             <Text fontSize="2xl"> Total Rs. {cost}</Text>
             <Text fontSize="2xl"> Total Cart Item - {totalcart}</Text>
             <Text fontSize="xl" textDecoration="line-through">
-              Total Disc - {cost * 1.7}
+              Total Disc : {cost * 1.7}
             </Text>
             <br />
             <Text>

@@ -8,7 +8,7 @@ export default function Delhivery() {
 
       <Container>
         <Image
-          src="https://media3.giphy.com/media/cmCHuk53AiTmOwBXlw/giphy.gif "
+          src="https://media0.giphy.com/media/gk3qooQQqkSvSQLsOt/giphy.gif?cid=6c09b95239mfhv0kystid26yzr5mia7gc8ujn8rnpyap5lnn&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s"
           alt="delhivery logo"
         />
       </Container>

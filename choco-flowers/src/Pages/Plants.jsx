@@ -35,41 +35,10 @@ export default function Cakes({ children }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [page, setPage] = useState(1);
   const [load, setLoad] = useState(false);
-  // let searchResult = searchParams.get("query");
-  // console.log(searchResult);
-  // useEffect(() => {
-  //   getData(page);
-  // }, [searchParams, page]);
-  // const getData = (page) => {
-  //   axios
-  //     .get(`http://localhost:3040/Child_shoe?_limit=8&_page=${page}`)
-  //     .then((res) => {
-  //       // setMdata(res.data);
-  //       let data = res.data;
-  //       if (searchResult) {
-  //         data = data.filter((el) => {
-  //           searchResult = searchResult.toLowerCase();
-
-  //           return (
-  //             el.brand.toLowerCase().includes(searchResult) ||
-  //             el.category.toLowerCase().includes(searchResult) ||
-  //             el.title.toLowerCase().includes(searchResult)
-  //           );
-  //         });
-  //       }
-  //       setMdata(data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-  // https://quaint-panama-hat-bass.cyclic.app/api/flower_pot
   const getData = (page) => {
     setLoad(true);
     axios
-      .get(
-        `https://talented-ox-parka.cyclic.app/api/plants?_limit=8&_page=${page}`
-      )
+      .get(`https://flowers-wdds.onrender.com/plants?_limit=8&_page=${page}`)
       .then((res) => {
         console.log(res);
         setMdata(res.data);

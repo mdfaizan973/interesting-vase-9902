@@ -47,7 +47,7 @@ export default function SingleProducts() {
   const getDta = async () => {
     setLoad(true);
     axios
-      .get(`https://talented-ox-parka.cyclic.app/api/all-pro/${id}`)
+      .get(`https://flowers-wdds.onrender.com/all-pro/${id}`)
       .then((res) => {
         console.log(res.data);
         setProds(res.data);
@@ -63,7 +63,7 @@ export default function SingleProducts() {
 
   const handlecart = () => {
     axios
-      .get(`https://talented-ox-parka.cyclic.app/api/all-pro/${id}`)
+      .get(`https://flowers-wdds.onrender.com/all-pro/${id}`)
       .then((res) => {
         console.log(res.data);
         cartval(res.data);
@@ -74,7 +74,7 @@ export default function SingleProducts() {
 
     const cartval = (pr) => {
       axios
-        .post("http://localhost:8010/cartItems", pr)
+        .post("https://flowers-wdds.onrender.com/cartItems", pr)
         .then((res) => {
           console.log("res.data: ", res.data);
         })

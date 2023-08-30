@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 export const AuthContext = createContext();
 export default function AuthContextProvider({ children }) {
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(true);
   const [token, setToken] = useState(null);
   const [lastActivityTime, setLastActivityTime] = useState(new Date());
 

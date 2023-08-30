@@ -1,39 +1,6 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import NorNav from "../Components/NorNav";
-// import { Input, Box, Button } from "@chakra-ui/react";
-// export default function Checkout() {
-//   return (
-//     <div>
-//       <NorNav />
-//       <Box
-//         w="50% "
-//         m={"15px auto"}
-//         padding="15px 5px"
-//         boxShadow="rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
-//       >
-//         <Input w="70%" />
-//         <br />
-//         <br />
 
-//         <Input w="70%" />
-//         <br />
-//         <br />
-
-//         <Input w="70%" />
-//         <br />
-//         <br />
-
-//         <Input w="70%" />
-//         <br />
-//         <br />
-
-//         <Input w="70% " />
-//         <br />
-//         <Button>Submit</Button>
-//       </Box>
-//     </div>
-//   );
-// }
 import { CartContext } from "./cartlength";
 import { Link as RouterLink } from "react-router-dom";
 import {
@@ -53,24 +20,44 @@ import {
   Input,
   Image,
   InputGroup,
-  InputLeftElement,
-  Textarea,
 } from "@chakra-ui/react";
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { useToast } from "@chakra-ui/react";
 
 export default function Checkout() {
-  const { cartd, totalcart } = useContext(CartContext);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [pin, setPin] = useState("");
+  const toast = useToast();
 
-  console.log(cartd, totalcart);
-  let cost = cartd.reduce((acc, el) => acc + +el.price, 0);
+  const { cartd, totalcart } = useContext(CartContext);
+  // console.log(cartd, totalcart);
+  let cost = 0;
+  cost = cartd.reduce((acc, el) => acc + +el.price, 0);
   // console.log("my cost is :-", cost);
+
+  const handleredirects = () => {
+    if (
+      name === "" ||
+      email === "" ||
+      phone === "" ||
+      address === "" ||
+      pin === ""
+    ) {
+      toast({
+        title: "Please fill all the fields",
+        position: ["top"],
+        isClosable: true,
+      });
+    } else {
+      let a = setTimeout(() => {
+        window.location.href = "/delhivery";
+
+        return () => a;
+      }, 2000);
+    }
+  };
   return (
     <>
       <NorNav />
@@ -143,19 +130,33 @@ export default function Checkout() {
                         <FormControl id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" placeholder="Name" />
+                            <Input
+                              type="text"
+                              size="md"
+                              placeholder="Name"
+                              onChange={(e) => setName(e.target.value)}
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
+                          <FormLabel>E-Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="email" placeholder="Email" />
+                            <Input
+                              type="email"
+                              placeholder="Email"
+                              onChange={(e) => setEmail(e.target.value)}
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Phone</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
-                            <Input type="text" size="md" placeholder="Phone" />
+                            <Input
+                              type="number"
+                              size="md"
+                              placeholder="Phone"
+                              onChange={(e) => setPhone(e.target.value)}
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -165,6 +166,7 @@ export default function Checkout() {
                               type="text"
                               size="md"
                               placeholder="Address"
+                              onChange={(e) => setAddress(e.target.value)}
                             />
                           </InputGroup>
                         </FormControl>
@@ -172,24 +174,26 @@ export default function Checkout() {
                           <FormLabel>Pin-Code</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <Input
-                              type="text"
+                              type="number"
                               size="md"
                               placeholder="Pin-Code"
+                              onChange={(e) => setPin(e.target.value)}
                             />
                           </InputGroup>
                         </FormControl>
 
                         <FormControl id="name" float="right">
-                          <RouterLink to="/delhivery">
-                            <Button
-                              variant="solid"
-                              bg="green"
-                              color="white"
-                              _hover={{}}
-                            >
-                              Submit
-                            </Button>
-                          </RouterLink>
+                          {/* <RouterLink to="/delhivery"> */}
+                          <Button
+                            variant="solid"
+                            bg="green"
+                            color="white"
+                            _hover={{}}
+                            onClick={handleredirects}
+                          >
+                            Submit
+                          </Button>
+                          {/* </RouterLink> */}
                         </FormControl>
                       </VStack>
                     </Box>

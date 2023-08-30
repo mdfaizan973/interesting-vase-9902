@@ -7,7 +7,7 @@ const CartContextProvider = ({ children }) => {
   const [cartd, setCartd] = useState(false);
   const MyCartData = () => {
     axios
-      .get("http://localhost:8010/cartItems")
+      .get("https://flowers-wdds.onrender.com/cartItems")
       .then((res) => {
         // console.log(res);
         setCartd(res.data);

@@ -15,7 +15,6 @@ import {
   HStack,
   Heading,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
@@ -31,7 +30,6 @@ export default function LogInPop() {
     email,
     password,
   };
-  // https://reqres.in/api/login
 
   const loginSubmit = () => {
     axios
