@@ -7,7 +7,7 @@ This is the clone of 1800Flowers.com that , I did during my construct week at ma
 The website name is sweets flower from where user can buy flowers , chocolates, cakes and plants.
 # Website Link :  https://flowerfz.netlify.app/
 
-<a href="https://flowers-wdds.onrender.com/">API</a>
+
 # Fully Responsive..
 
 # Tech Stack :-
